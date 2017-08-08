@@ -6,7 +6,8 @@ App({
     onLaunch(options) {
         // Do something initial when launch.
         console.log('on launch');
-        console.log(255999);
+        console.log(225594499);
+
 
         // 展示本地存储能力
         var logs = wx.getStorageSync('logs') || []
