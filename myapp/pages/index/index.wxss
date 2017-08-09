@@ -4,3 +4,6 @@
 .container .head {
   font-size: 12px;
 }
+.container .footer {
+  background: #ccc;
+}
