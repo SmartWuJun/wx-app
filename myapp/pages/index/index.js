@@ -1,5 +1,6 @@
 //index.js
 //获取应用实例
+var until = require('../../utils/code/index')
 const app = getApp()
 
 Page({
@@ -15,6 +16,7 @@ Page({
         })
     },
     onLoad: function() {
+
         if (app.globalData.userInfo) {
             this.setData({
                 userInfo: app.globalData.userInfo,
@@ -36,5 +38,9 @@ Page({
             userInfo: e.detail.userInfo,
             hasUserInfo: true
         })
+    },
+    onReady() {
+        console.log(this.data.userInfo);
+        until.qrcode('name', '0926', 300, 300, this.data.userInfo.avatarUrl);
     }
 })
