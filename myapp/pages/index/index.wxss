@@ -20,3 +20,8 @@
 .usermotto {
     margin-top: 200px;
 }
+
+canvas {
+    width: 300rpx;
+    height: 300rpx;
+}

@@ -7,6 +7,10 @@
     </block>
     <button wx:else open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
   </view>
+
+  <canvas canvas-id="name" ></canvas>
+
+  <navigator url="../map/map">map</navigator>
   <view class="usermotto">
     <text class="user-motto">{{motto}}</text>
   </view>
