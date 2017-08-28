@@ -33,6 +33,15 @@ Page({
             }
         }
     },
+    onPullDownRefresh() {
+        console.log(123);
+    },
+    onReachBottom() {
+        console.log(4);
+    },
+    onPageScroll(object) {
+        console.log(object.scrollTop);
+    },
     getUserInfo: function(e) {
         this.setData({
             userInfo: e.detail.userInfo,
