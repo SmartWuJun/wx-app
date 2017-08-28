@@ -1,0 +1,14 @@
+/* map.wxss */
+.info{
+  position: absolute;
+  left: 50px; 
+  top: 30px;
+  width: 200rpx;
+  height:600rpx;
+  background: #ccc;
+  z-index: 100;
+}
+
+map{
+  z-index: 1;
+}
