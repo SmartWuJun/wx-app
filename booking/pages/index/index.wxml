@@ -1,0 +1,63 @@
+<!--index.wxml-->
+<include src="../common/swiper.wxml"/>
+<view class="main">
+    <navigator class="link" url="/pages/selectStore/selectStore">
+        <view class="item">
+            <view class="name">选择门店</view>
+            <view class="arrow"></view>
+        </view>
+
+    </navigator>
+     <navigator class="link" url="url">
+        <view class="item">
+            <view class="name">选择宠物</view>
+            <view class="item-content">石路店</view>
+            <view class="arrow"></view>
+        </view>
+
+    </navigator>
+     <navigator class="link" url="url">
+        <view class="item">
+            <view class="name">选择服务</view>
+            <view class="arrow"></view>
+        </view>
+
+    </navigator>
+     <navigator class="link" url="/pages/selectDate/selectDate">
+        <view class="item">
+            <view class="name">选择时间</view>
+            <view class="arrow"></view>
+        </view>
+
+    </navigator>
+    <view catchtap="doBooking" class="book">确定预约</view>
+</view>
+
+<view class="mask" catchtap="hideMask" wx:if="{{problemTip}}">
+    <view class="proup">
+        <view class="proup-title">客户服务</view>
+        <view class="proup-content">
+            <view class="block">
+                <image src="/images/noPromise.png"></image>
+                <view>无法预约</view>
+            </view>
+             <view class="block">
+                <image src="/images/report.png"></image>
+                <view>举报服务</view>
+            </view>
+             <view class="block">
+                <image src="/images/bad.png"></image>
+                <view>品质不佳</view>
+            </view>
+             <view class="block">
+                <image src="/images/other.png"></image>
+                <view>其他问题</view>
+            </view>
+        </view>
+    </view>
+</view>
+
+
+
+<import src="/component/modal/modal.wxml"/>
+<template is="modal" data="{{...__modal__}}"></template>

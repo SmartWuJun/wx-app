@@ -1,0 +1,20 @@
+<!--selectDate.wxml-->
+<view class="main">
+    <view class="datepicker">
+        <view >
+            <scroll-view class="dates" scroll-x>
+                <view wx:for="{{dates}}" wx:key="*this" class="item {{item.active?'active':''}}" data-index="{{index}}" catchtap="changeDate">
+                    <view class="date">{{item.day}}</view>
+                    <view class="date">{{item.date}}</view>
+                </view>
+            </scroll-view>
+        </view>
+        <view class="tip">左右滚动选择更多日期</view>
+        <view class="timeList">
+            <view class="time {{item.free?'free':''}} {{item.active?'active':''}}" data-index="{{index}}" catchtap="chooseTime" wx:for="{{worksheet}}" wx:key="*this">
+                {{item.time}}
+            </view>
+        </view>
+    </view>
+    <view class="btn-sure">确认</view>
+</view>

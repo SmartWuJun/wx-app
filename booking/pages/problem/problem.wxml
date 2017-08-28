@@ -1,0 +1,18 @@
+<!--problem.wxml-->
+<view class="main">
+    <label>请描述您遇到的问题</label>
+    <textarea bindinput='textChange' class="text"  />
+    <view class="lastNum">还可以输入{{140-text.length}}字</view>
+    <view class="upload">
+        <view class="pic" wx:key="*this" wx:for="{{picList}}">
+            <image src="{{item.url}}"></image>
+            <view catchtap="deletePic" data-index="{{index}}" class="delete-pic"></view>
+        </view>
+        <view class="add-pic" catchtap="addPic" ></view>
+        <view class="tip">
+            <view class="">上传截图</view>
+            <view class="">方便我们更快的帮助您解决问题</view>
+        </view>
+    </view>
+    <view class="btn-submit">提交</view>
+</view>

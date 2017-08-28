@@ -1,0 +1,71 @@
+/* problem.wxss */
+
+page{
+    padding:  1rem;
+    font-size: 14px;
+    color: #333;
+     line-height: 2; 
+     box-sizing: border-box;
+}
+.main{
+    padding: .5rem 1rem 3rem;
+    background: #fff;
+    /* border: 1px solid #ccc; */
+    box-shadow: 0 0 10px 2px #ccc;
+    display: flex;
+    flex-direction: column;
+}
+
+.text{
+    border: 1px solid #ddd;
+    line-height: 1.5;
+    min-height: 15rem;
+    padding:0  .5rem;
+    box-sizing: border-box;
+}
+
+.lastNum{
+    text-align: right;
+}
+
+.add-pic{
+    width: 3rem;
+    height: 3rem;
+    border: 1px dashed #ccc;
+    border-radius: 3px;
+    background: url(/images/add.png) center no-repeat;
+    background-size: 1rem 1rem;
+    margin-right: 10px;
+}
+.delete-pic{
+    width: 20px;
+    height:20px;
+    background: url(/images/delete.png) no-repeat;
+    background-size: contain;
+    border-radius: 50%;
+    position: absolute;
+    top: -8px;
+    right: -8px;
+}
+.upload{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.btn-submit{
+    background: #d9753e;
+    color: #fff;
+    padding: 5px 30px;
+    align-self: center;
+    margin-top: 20px;
+}
+
+.pic image{
+    width: 3rem;
+    height:3rem;
+    border-radius: 3px;
+}
+.pic{
+    margin-right: 10px;
+    position: relative;
+}

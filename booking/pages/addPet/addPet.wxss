@@ -1,0 +1,65 @@
+/* addPet.wxss */
+page {
+  background: #fff;
+  width: 90%;
+  height: 85%;
+  box-sizing: border-box;
+  font-size:25rpx;
+  margin-top:10px;
+  box-shadow: 0 0 40rpx 3rpx #ccc;
+  margin-left: 18px;
+  
+}
+.petInfo{
+  padding-top: 10px;
+  padding-bottom:110px;
+}
+.addAvatar image{
+  border-radius: 100%;
+  margin:auto;
+  height:150rpx;
+  width:150rpx;
+  margin-top:10px;
+  margin-bottom:20px;
+  margin-left:135px;
+
+}
+.panel{
+  display: flex;
+  padding:3px;
+  padding-left:40px;
+
+}
+.panel label{
+  padding-right:10px;
+  padding-top:6px;
+
+}
+.input-border{
+  border:1px solid #ccc;
+  width:60%;
+}
+.input-border.weight{
+  display: flex;
+  justify-content: space-between;
+}
+.v{
+  float:right;
+  font-size:13px;
+  color:#999;
+
+}
+button{
+  background-color: #f90;
+  width:25%;
+  font-size:15px;
+}
+.picker{ 
+ /* display: flex;
+ justify-content: space-between; */
+ padding-top:6px;
+ padding-left:10px;
+}
+.text{
+  padding-left:10px;
+}

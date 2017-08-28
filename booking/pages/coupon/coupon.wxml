@@ -1,0 +1,19 @@
+<!--coupon.wxml-->
+<view class="main">
+    <view class="coupon" wx:for="{{couponList}}" wx:key="*this">
+        <view class="coupon-title">{{item.title}}</view>
+        <view class="coupon-content">
+            <image src="{{item.picUrl}}" class="coupon-pic"></image>
+            <view class="coupon-right">
+                <view class="coupon-description" >
+                  <view class="des-item" wx:for="{{item.descriptionList}}" wx:key="*this"><view> ▪ </view>  <view class="text">{{item.content}}</view></view>
+                </view>
+                <view class="code">
+                 <canvas canvas-id="barcode-{{index}}" class='barcode' />
+                    <text>123456</text>
+                </view>
+               
+            </view>
+        </view>
+    </view>
+</view>

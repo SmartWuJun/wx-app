@@ -1,0 +1,70 @@
+<!--recharge.wxml-->
+<include src="../common/swiper.wxml"/>
+<view class="recharge">
+    <view class="title">
+        <label>充值</label>
+    </view>
+    <view class="card">
+        <label>卡号</label>
+        <text class="text">{{cardnumber}}</text>
+    </view>
+    <view class="card">
+        <label>余额</label>
+        <text class="text">{{balance}}元</text>
+    </view>
+    <view class="panel">
+        <view class="panel-row">
+          <view class="panel-block">
+              <button class="{{price==100?'active':''}}"  data-value="100" catchtap="choosePrice">100元</button>
+          </view>
+          <view class="panel-block">
+              <button class="{{price==500?'active':''}}" data-value="500" catchtap="choosePrice">500元</button>
+          </view>
+          <view class="panel-block">
+              <button class="{{price==1000?'active':''}}" data-value="1000" catchtap="choosePrice">1000元</button>
+          </view>
+        </view>
+        <view class="panel-row">
+          <view class="panel-block">
+              <button class="{{price==2000?'active':''}}" data-value="2000" catchtap="choosePrice">2000元
+                <label>送100</label>
+              </button>
+          </view>
+          <view class="panel-block">
+              <button class="{{price==3000?'active':''}}" data-value="3000" catchtap="choosePrice">3000元
+                 <label>送200</label>
+              </button>
+          </view>
+          <view class="panel-block {{showView?'block_show':'more_hide'}}">
+              <button class="{{price==5000?'active':''}}" data-value="5000" catchtap="choosePrice">5000元
+                 <label>送400</label>
+              </button>
+          </view>
+          <view class="panel-block {{showView?'more_hide':'block_show'}}">
+              <button catchtap="open">更多</button>
+          </view>
+        </view>
+        <view class="panel-row {{showView?'more_show':'more_hide'}}">
+          <view class="panel-block">
+              <button class="{{price==10000?'active':''}}" data-value="10000" catchtap="choosePrice">10000元
+                <label>送1000</label>
+              </button>
+          </view>
+          <view class="panel-block">
+              <button class="{{price==20000?'active':''}}" data-value="20000" catchtap="choosePrice">20000元
+                <label>送2500</label>
+              </button>
+          </view>
+          <view class="panel-block">
+              <button catchtap="close">收起</button>
+          </view>
+       </view>
+    <view class="panel-row ">
+      <view class="panel-block">
+          <button class="submit" catchtap="requestPayment" >充值</button>
+      </view>
+    </view>
+  </view>
+</view>
+
+

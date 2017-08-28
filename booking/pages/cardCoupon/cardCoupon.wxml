@@ -1,0 +1,11 @@
+<!--cardCoupon.wxml-->
+<view class="main">
+    <view class="row">
+    <label>不使用优惠券 </label>
+    </view>
+    <view class="row" wx:for="{{couponList}}" wx:key="*this">
+        <view class="coupon-name">{{item.name}}</view>
+        <view class="tip" wx:if="{{item.tip}}">{{item.tip}}</view>
+    </view>
+    
+</view>

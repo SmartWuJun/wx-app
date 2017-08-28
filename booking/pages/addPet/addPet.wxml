@@ -1,0 +1,85 @@
+<!--addPet.wxml-->
+<form bindsubmit="formSubmit">
+  <view class="petInfo">
+    <view class="petPic">
+    <view class="addAvatar">
+    <image catchtap="chooseImage" src="{{avatarFileUrl}}"></image>
+    </view>
+      </view>
+    <view class="panel name">
+      <label>昵称:</label>
+      <view class="input-border">
+        <input placeholder="" name='name' class="text name" auto-focus value="{{petInfo.name}}" />
+      </view>
+    </view>
+    <view class="panel birth">
+      <label>生日:</label>
+      <view class="input-border">
+        <view class="section">
+          <picker name='birth' mode="date" value='{{date}}' start="1900-01-01" end="2017-12-31" bindchange="bindDateChange">
+            <view class="picker" style="height:30px;">
+              {{date}}<label class="v">V</label>
+            </view>
+          </picker>
+        </view>
+      </view>
+    </view>
+    <view class="panel weight">
+      <label>体重:</label>
+      <view class="input-border weight">
+        <input placeholder="" name='weight' class="text name" auto-focus value="{{petInfo.weight}}" />
+      <label class="v">KG</label>
+      </view>
+      <!-- <view class="input-border">
+        <view class="section" style="position:relative;top:-2px;">
+          <picker name='weight' bindchange="bindWeightChange" value="{{weightIndex}}" range="{{weight}}">
+            <view class="picker" style="height:30px;">
+              {{weight[weightIndex]}}<label class="v">V</label>
+            </view>
+          </picker>
+        </view>
+      </view> -->
+    </view>
+    <view class="panel sex">
+      <label>性别:</label>
+      <view class="input-border">
+        <view class="section" style="position:relative;top:-2px;">
+          <picker name='sex' bindchange="bindSexChange" value="{{sexIndex}}" range="{{sex}}" range-key="{{'value'}}">
+            <view class="picker" style="height:30px;">
+              {{sex[sexIndex].value}}<label class="v">V</label>
+            </view>
+          </picker>
+        </view>
+      </view>
+    </view>
+    <view class="panel type">
+      <label>物种:</label>
+      <view class="input-border">
+        <view class="section" style="position:relative;top:-2px;">
+          <picker name='subType' bindchange="bindSubTypeChange" value="{{subTypeIndex}}" range="{{subType}}" range-key="{{'value'}}">
+            <view class="picker" style="height:30px;">
+              {{subType[subTypeIndex].value}}<label class="v">V</label>
+            </view>
+          </picker>
+        </view>
+      </view>
+    </view>
+    <view class="panel subType">
+      <label>品种:</label>
+      <view class="input-border">
+        <view class="section" style="position:relative;top:-2px;">
+          <picker name='variety' bindchange="bindVarietyChange" value="{{varietyIndex}}" range="{{variety}}" range-key="{{'value'}}">
+            <view class="picker" style="height:30px;">
+              {{variety[varietyIndex].value}}<label class="v">V</label>
+            </view>
+          </picker>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <view class="">
+    <button class="save-btn" formType="submit">确认</button>
+  </view>
+
+</form>

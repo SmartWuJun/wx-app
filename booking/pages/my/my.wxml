@@ -1,0 +1,26 @@
+<!--my.wxml-->
+<view class="main">
+    <view class="row-pet">
+        <scroll-view  scroll-x class="pets">
+            <view class="item" wx:for="{{pets}}" wx:key="*this">
+                <image class="icon-pet" src="{{item.picUrl}}"></image>
+                <view>{{item.name}}</view>
+                <view class="btn-delete"></view>
+            </view>
+        </scroll-view>
+        <view class="btn-add"></view>
+    </view>
+   <navigator url="/pages/vipCard/vipCard" class="row">
+        <view class="text"> 我的账户  </view>
+     </navigator>
+      <navigator url="/pages/beautyCard/beautyCard" class="row">
+        <view class="text">美容卡  </view>
+    </navigator>
+     <navigator url="/pages/coupon/coupon" class="row">
+        <view class="text">优惠券  </view>
+    </navigator>
+     <view class="row">
+        <view class="text">修改密码  </view>
+    </view>
+
+</view>

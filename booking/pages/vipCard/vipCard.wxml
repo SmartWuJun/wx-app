@@ -1,0 +1,27 @@
+<!--vipCard.wxml-->
+<view class="main">
+    <view class="bind-card">
+        <view class="bind-card-content">
+            <view class="content-title">您还没有绑定购物卡</view>
+            <view class="">如果您已经办理过宠尚卡,</view>
+            <view class="">您可以：输入您的宠尚卡卡号进行绑定</view>
+            <input class="text-card" placeholder="输入您的卡号" placeholder-style="text-align:center;color:#ddd" />
+        </view>
+        <view class="btn">立即绑定</view>
+        <view class="tip">如果您还没有宠尚卡,请到我们门店咨询.</view>
+    </view>
+    <view class="card">
+        <view class="card-content">
+            <view class="row">
+                <label>卡号：</label>
+                <view class="card-no">0001</view>
+            </view>
+            <view class="row">
+                <label>余额：</label>
+                <view class="balance">100元</view>
+            </view>
+        </view>
+
+        <view class="btn">充值</view>
+    </view>
+</view>

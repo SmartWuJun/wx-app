@@ -1,0 +1,77 @@
+/* my.wxss */
+
+page{
+    padding: .8rem;
+    font-size: 14px;
+    color: #333;
+}
+
+.row-pet{
+    padding: .7rem 0.5rem;
+    background: #fff;
+    box-shadow: 0 0 10px 2px #ccc;
+    margin-bottom: .5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.row{
+    padding: 1.5rem 1rem;
+    background: #fff;
+    box-shadow: 0 0 10px 2px #ccc;
+    margin-bottom: .5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.pets{
+    width: 14.4rem;
+    white-space: nowrap;
+    height: 3rem;
+    
+
+}
+.item{
+    display: inline-block;
+    text-align: center;
+    padding:0  0.5rem;
+    font-size: 12px;
+    line-height: 1;
+    position: relative;
+}
+.icon-pet{
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    margin-bottom: 5px;
+}
+
+.btn-add{
+    width: 3rem;
+    height: 3rem;
+    background: url(/images/add.png) center no-repeat;
+    background-size: 30% 30%;
+    box-shadow: 0 0 10px 3px #ccc;
+    flex-shrink: 0;
+}
+
+.btn-delete{
+    width: 20px;
+    height: 20px;
+    background: url(/images/delete.png) no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.row:after{
+    width: 10px;
+    height: 10px;
+    border-top: 1px solid #666;
+    border-right: 1px solid #666;
+    display: inline-block;
+    content: '';
+    transform: rotate(45deg)
+}

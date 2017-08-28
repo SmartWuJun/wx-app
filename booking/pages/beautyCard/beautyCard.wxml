@@ -1,0 +1,14 @@
+<!--beautyCard.wxml-->
+<view class="main">
+    <view class="card" wx:for="{{cardList}}" wx:key="*this">
+        <view class="card-title">{{item.title}}</view>
+        <view class="card-content clearfix">
+            <view class="pet-name text">宠物：{{item.name}}</view>
+            <view class="limit-date text">有效期：{{item.limitDate}}</view>
+            <view class="description text">{{item.description}}</view>
+           
+            <navigator  class="btn fr" url="/pages/keepCard/keepCard">续卡</navigator>
+        </view>
+       
+    </view>
+</view>

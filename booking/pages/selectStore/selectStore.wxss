@@ -1,0 +1,118 @@
+/* selectStore.wxss */
+
+page {
+    height: 100%;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.map {
+    flex: 1;
+    border: 5px solid red;
+}
+
+#map {
+    width: 100%;
+    /* height: 300px; */
+    flex: 1;
+}
+
+.icon-location {
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAACDElEQVRYR81XS1LCQBDtjsSt3kCzMFnKBSDhBOIN4AZalVju1J1lUiU30BuIJzCAB8Bl4iIcQbcG0laACKWZyeRjQdb9ef36My8IG/4wb37fMupI0UmEWEeC/cQfgVxC6Vm13XGemMIAvItGG0m6AoA6LwEBTCSadY+cV1cESCaA4MzYD2W6B4COSMDEhgD6uyF2lZ77wfPjAlgmf8mqmpNgLIfY4oHgAvDMZh8RT/JU/seWwFWdQYsVgwnAtxodAOmhVPKlMxHdaM7wOi1WKoA59TUKAFdTXgoIwYc8RSWtFakAqqz+Z00pOj9yRr3fhaQCqKT3vzIR0bPmDNtCAHxLp1KUM5xVe/CnYEYLNggguDQOwxkF/8GAvIOKcutO1mNvHwMxOt/S4/O5VzULwjOwBVtQ3RVcsRh1VXv0KLSGsZFn6hNEOKioDZ9yiIfCl3AxB9WxgIwrGOfhvoa+1XQBUC/DAhG8ac6AKWL4emBxE2KJVXQjPgHQ4Mm0TEW0lGJPRVggjE61u1G/sCJKHD2zeY2IsR4U/ngaIPMSpmXxTH2MCMdiCGig2kNDxDazBUmQ5RshMg/MlRNWRCzk72bjjFCKFTLzE+l7oRYkTrzVZImO0kO4HoDTilzUJzGFZ2AdRFor8lJfCsDiVK+uZBHqSwOIpftXLZq/brtTqZP1C8aag0ItENlvUZtvm2jmIe1TSfoAAAAASUVORK5CYII=) no-repeat;
+    background-size: contain;
+    width: 1.23rem;
+    height: 1.23rem;
+    text-align: center;
+    font-size: 13px;
+    color: #fff;
+    margin-right: 5px;
+}
+
+.icon-location-tip {
+    /* background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAACDElEQVRYR81XS1LCQBDtjsSt3kCzMFnKBSDhBOIN4AZalVju1J1lUiU30BuIJzCAB8Bl4iIcQbcG0laACKWZyeRjQdb9ef36My8IG/4wb37fMupI0UmEWEeC/cQfgVxC6Vm13XGemMIAvItGG0m6AoA6LwEBTCSadY+cV1cESCaA4MzYD2W6B4COSMDEhgD6uyF2lZ77wfPjAlgmf8mqmpNgLIfY4oHgAvDMZh8RT/JU/seWwFWdQYsVgwnAtxodAOmhVPKlMxHdaM7wOi1WKoA59TUKAFdTXgoIwYc8RSWtFakAqqz+Z00pOj9yRr3fhaQCqKT3vzIR0bPmDNtCAHxLp1KUM5xVe/CnYEYLNggguDQOwxkF/8GAvIOKcutO1mNvHwMxOt/S4/O5VzULwjOwBVtQ3RVcsRh1VXv0KLSGsZFn6hNEOKioDZ9yiIfCl3AxB9WxgIwrGOfhvoa+1XQBUC/DAhG8ac6AKWL4emBxE2KJVXQjPgHQ4Mm0TEW0lGJPRVggjE61u1G/sCJKHD2zeY2IsR4U/ngaIPMSpmXxTH2MCMdiCGig2kNDxDazBUmQ5RshMg/MlRNWRCzk72bjjFCKFTLzE+l7oRYkTrzVZImO0kO4HoDTilzUJzGFZ2AdRFor8lJfCsDiVK+uZBHqSwOIpftXLZq/brtTqZP1C8aag0ItENlvUZtvm2jmIe1TSfoAAAAASUVORK5CYII=) no-repeat;
+    background-size: contain; */
+    width: .8rem;
+    height: .8rem;
+    /* text-align: center;
+    font-size: 13px;
+    color: #fff; */
+    margin-right: 5px;
+    display: inline-block;
+}
+
+.inline {
+    display: inline;
+}
+
+.stores {
+    padding: .5rem 0;
+    max-height: 10rem;
+}
+
+.store {
+    display: flex;
+    padding: 0.25rem .6rem;
+    font-size: 14px;
+}
+
+.store-info {
+    flex: 1;
+    display: flex;
+}
+
+.store-info.active {
+    color: #da753f;
+}
+
+.store-name {
+    margin-right: 8px;
+}
+
+.btn-sure {
+    background: #da753f;
+    color: #fff;
+}
+
+.info {
+    text-align: center;
+}
+
+.tip {
+    width: 19rem;
+    /* height: 100px; */
+    padding: .5rem 0;
+    background: #fff;
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 0 0 10px 2px #ccc;
+    text-align: center;
+    font-size: 14px;
+}
+
+.select-location {
+    /* padding-left: 1rem; */
+    /* background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAACDElEQVRYR81XS1LCQBDtjsSt3kCzMFnKBSDhBOIN4AZalVju1J1lUiU30BuIJzCAB8Bl4iIcQbcG0laACKWZyeRjQdb9ef36My8IG/4wb37fMupI0UmEWEeC/cQfgVxC6Vm13XGemMIAvItGG0m6AoA6LwEBTCSadY+cV1cESCaA4MzYD2W6B4COSMDEhgD6uyF2lZ77wfPjAlgmf8mqmpNgLIfY4oHgAvDMZh8RT/JU/seWwFWdQYsVgwnAtxodAOmhVPKlMxHdaM7wOi1WKoA59TUKAFdTXgoIwYc8RSWtFakAqqz+Z00pOj9yRr3fhaQCqKT3vzIR0bPmDNtCAHxLp1KUM5xVe/CnYEYLNggguDQOwxkF/8GAvIOKcutO1mNvHwMxOt/S4/O5VzULwjOwBVtQ3RVcsRh1VXv0KLSGsZFn6hNEOKioDZ9yiIfCl3AxB9WxgIwrGOfhvoa+1XQBUC/DAhG8ac6AKWL4emBxE2KJVXQjPgHQ4Mm0TEW0lGJPRVggjE61u1G/sCJKHD2zeY2IsR4U/ngaIPMSpmXxTH2MCMdiCGig2kNDxDazBUmQ5RshMg/MlRNWRCzk72bjjFCKFTLzE+l7oRYkTrzVZImO0kO4HoDTilzUJzGFZ2AdRFor8lJfCsDiVK+uZBHqSwOIpftXLZq/brtTqZP1C8aag0ItENlvUZtvm2jmIe1TSfoAAAAASUVORK5CYII=) no-repeat; */
+    /* background-size: 0.62rem 0.62rem; */
+    display: inline-block;
+    line-height: 1.5;
+    /* background-position: 2px 5px; */
+}
+
+.tip-info {
+    line-height: 1.5
+}
+
+.location-tag {
+    width: 10px;
+    height: 22px;
+    position: absolute;
+    top: 46%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}

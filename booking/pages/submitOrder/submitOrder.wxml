@@ -1,0 +1,69 @@
+<!--submitOrder.wxml-->
+<view class="main">
+    <view class="pet" wx:for="{{pets}}" wx:key="*this">
+        <view class="pet-head xn-between shadow">
+            <view class="pet-head-left">
+                宠物{{index+1}} <text>|</text> {{item.shop}}
+            </view>
+            <view class="pet-head-right">
+                <image class="pet-photo" src="{{item.photo?item.photo:'/images/logo.jpg'}}"></image>
+                <view class="pet-name">{{item.name}}</view>
+            </view>
+        </view>
+        <view class="services shadow">
+            <view class="service xn-between" wx:for="{{item.services}}" wx:key="*this">
+                <label>项目{{index+1}}</label>
+                <view class="service-name">{{item.name}}</view>
+            </view>
+            <view class="date">3月17号(星期五)16：00</view>
+        </view>
+        <view class="insurance shadow xn-between">
+            <view class="insurance-name"><label>安心保险</label> (<text>单次服务意外险</text>)</view>
+            <view>
+                <text class="price">$3.00</text>
+                <checkbox color="#da753f"  value="value" checked="{{false}}" />
+            </view>
+        </view>
+    </view>
+    <view class="">
+        <textarea class="mark shadow" hidden="{{textAreaHide}}" placeholder="请填写订单备注"   />
+    </view>
+    <view class="bond xn-between shadow">
+        <label>券支付</label>
+        <view class="bond-type">
+            <text>20元美容抵用券</text>
+
+        </view>
+    </view>
+    <view class="total">
+        <view class="xn-between">
+            <label>优惠金额：</label>
+            <label>-￥20</label>
+        </view>
+        <view class="xn-between">
+            <label>服务时长：</label>
+            <label>2小时</label>
+        </view>
+        <view class="xn-between">
+            <label>订单合计：(原价￥200)</label>
+            <label>￥180</label>
+        </view>
+        <view class="pay-type xn-between">
+            <label>支付方式</label>
+            <view class="">
+                <radio-group bindchange="checkboxChange">
+                    <label class="checkbox" wx:key="*this" wx:for="{{payTypes}}">
+                         <radio value="{{item.name}}" color="#da753f" checked="{{item.checked}}"/>{{item.value}}
+                </label>
+                </radio-group>
+            </view>
+        </view>
+    </view>
+
+    <view class="btn-submit" catchtap="submit">确认支付</view>
+</view>
+
+
+
+<import src="/component/modal/modal.wxml"/>
+<template is="modal" data="{{...__modal__}}"></template>

@@ -1,0 +1,53 @@
+/* coupon.wxss */
+
+page{
+    padding: 1rem;
+    /* font-size: 14px; */
+    color: #666;
+
+}
+
+.coupon{
+    background: #fff;
+    padding: 0 .6rem;
+    box-shadow: 0 0 15px 2px #ccc;
+    margin-bottom: 10px;
+}
+
+.coupon-title{
+    line-height: 2;
+    border-bottom: 1px solid #ddd;
+    font-size: 16px;
+    color: #333;
+}
+
+.coupon-content{
+    padding: .6rem 0 .8rem;
+    display: flex;
+    font-size: 12px;
+}
+
+.coupon-pic{
+    width: 8rem;
+    height: 6rem;
+    flex-shrink: 0;
+}
+
+.des-item{
+    padding-left: 5px;
+    display: flex;
+}
+
+.des-item .text{
+    padding-left: 5px;
+}
+
+.barcode{
+    width: 150rpx;
+    height: 50rpx;
+}
+.code{
+    text-align: center;
+    font-size: 9px;
+    line-height: 1;
+}

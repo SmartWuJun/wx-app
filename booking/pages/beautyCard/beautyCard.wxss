@@ -1,0 +1,38 @@
+/* beautyCard.wxss */
+
+page{
+    padding: 1rem .6rem;
+    font-size: 12px;
+    color: #333;
+    line-height: 2;
+}
+
+.card{
+    box-shadow: 0 0 15px 2px #ccc;
+    margin-bottom: 10px;
+}
+
+.card-title{
+    text-align: center;
+    padding: 5px 0;
+    color: #fff;
+    background: #da753f;
+}
+
+.card-content{
+    background: #fff;
+    padding: .5rem;
+}
+
+.btn{
+    background: #da753f;
+    color: #fff;
+    font-size: 14px;
+    padding: 0 10px;
+    min-width: 80px;
+    text-align: center;
+}
+
+.fr{
+    float: right;
+}

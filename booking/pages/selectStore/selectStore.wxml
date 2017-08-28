@@ -1,0 +1,30 @@
+
+
+<view class="main">
+   
+    <map id="map" longitude="{{long}}" latitude="{{lat}}" scale="14"  bindcontroltap="controltap" controls='{{controls}}' show-location="true" markers="{{markers}}" bindmarkertap="markertap"  bindregionchange="regionchange" show-location >
+        <cover-view class="tip">
+            <cover-view class="select-location">
+                
+                <cover-image class='icon-location-tip' src='../../images/location.png'></cover-image>
+              <cover-view class='inline'>  {{location}}</cover-view>
+            </cover-view>
+            <cover-view class='tip-info'>距离{{distance}}km  驾车预计 {{time}} 分钟</cover-view>
+        </cover-view>
+     <cover-image class='location-tag' src='../../images/tag.png'></cover-image>  
+    </map>
+    
+    <view class="info">
+        <scroll-view class="stores" scroll-y>
+            <view class='store' wx:for="{{stores}}" wx:key="*this" catchtap="chooseStore" data-id='{{item.id}}' data-long='{{item.long}}' data-lat="{{item.lat}}">
+                <view class="icon-location"> {{index+1}}</view>
+                <view class='store-info {{item.active?"active":""}}' > 
+                    <view class='store-name'>{{item.name}}: </view>
+                    <view class='store-location'>{{item.location}}</view>
+                 </view>
+                 <view class="distance">{{item.distance}}km</view>
+            </view>
+        </scroll-view>
+        <button class='btn-sure' catchtap='sure' size="mini">确定</button>
+    </view>
+</view>

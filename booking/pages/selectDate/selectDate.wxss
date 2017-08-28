@@ -1,0 +1,72 @@
+/* selectDate.wxss */
+.main{
+    padding: .7rem;
+    font-size: 12px;
+    line-height: 1;
+    text-align: center;
+    color: #333;
+}
+ .dates {
+
+    display: block;
+    padding: 5px 0;
+    border: 1px solid #e8e8e8;
+    white-space: nowrap;
+    box-sizing: border-box;
+    height: 36px;
+    /* width: 18rem; */
+ }
+
+ .datepicker{
+     background: #fff;
+     box-shadow: 0 0 20px 2px #ccc;
+     padding: 1rem .5rem;
+ }
+  .datepicker swiper{
+      height: 12rem;
+  }
+
+ .tip{
+     color: #da753f;
+     line-height: 2;
+ }
+
+ .timeList{
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: space-between;
+ }
+
+ .time{
+     font-size: 14px;
+     border: 1px solid #e8e8e8;
+     width: 21%;    
+     margin-bottom: 10px;
+     line-height: 2;
+     color: #999;
+ }
+ .time.free{
+     color: #333;
+ }
+
+ .time.active{
+     color: #da753f;
+ }
+
+ .item{
+      display: inline-block; 
+      padding: 0 5px;
+ }
+
+ .btn-sure{
+     padding: .5rem 2rem;
+     display: inline-block;
+     color: #fff;
+     background: #da753f;
+     font-size: 14px;
+     margin-top: 20px;
+ }
+
+ .item.active{
+     color: #da753f;
+ }

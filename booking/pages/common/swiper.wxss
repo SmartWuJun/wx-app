@@ -1,0 +1,8 @@
+/* header.wxss */
+swiper{
+    height: 10rem;
+}
+.swiper-image{
+    height: 10rem;
+   
+}

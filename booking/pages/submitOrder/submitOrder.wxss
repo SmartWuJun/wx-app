@@ -1,0 +1,173 @@
+/* submitOrder.wxss */
+page{
+    padding: .5rem;
+    font-size: 12px;
+}
+.pet-head{
+    background: #da753f;
+    color: #fff;
+    padding: .5rem 1rem;
+    margin-bottom: 10px;
+}
+.pet-photo{
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+}
+.pet-name{
+    font-size: 12px;
+    line-height: 1;
+    text-align: center;
+}
+
+.shadow{
+    box-shadow: 0 0 10px 3px #ccc;
+}
+
+.services{
+    background: #fff;
+    padding: .5rem 1rem;
+    line-height: 2;
+    margin-bottom: 10px;
+}
+
+.xn-between label{
+    color: #da753f;
+}
+
+.date{
+    text-align: right;
+}
+.insurance{
+    background: #fff;
+    padding: .5rem 1rem;
+    margin-bottom: 10px;
+}
+.price{
+    margin-right: 5px;
+}
+.bond-type{
+      display: flex;
+      align-items: center;
+}
+.bond-type:after{
+    width: 10px;
+    height: 10px;
+    content: '';
+    transform: rotate(45deg);
+    border-top: 1px solid #666;
+    border-right: 1px solid #666;
+    display: block;
+}
+.mark{
+    width: 100%;
+    margin-bottom: 10px;
+    padding: .5rem;
+    box-sizing: border-box;
+    height: 6rem;
+    background: #fff;
+    text-align: left;
+}
+.bond{
+    padding: .5rem 1rem;
+    background: #fff;
+  
+}
+
+.pay-type radio-group label{
+    color: #333;
+}
+.total{
+    padding: .5rem 1rem;
+    line-height: 2;
+}
+
+.pay-type{
+    border-top: 1px solid #ccc;
+    margin-top: .5rem;
+    padding-top: .5rem;
+}
+
+.btn-submit{
+    background: #da753f;
+    color: #fff;
+    font-size: 14px;
+    padding: .3rem 1rem;
+    display: inline-block;
+    margin: 20px;
+}
+
+.main{
+    text-align: center;
+    vertical-align: middle;
+}
+
+
+.mask{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
+
+.mask .tip{
+    width: 90%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 8px;
+}
+
+.tip-head{
+    background: #393939;
+    height: 1.8rem;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.tip-content{
+    background: #fff;
+    padding: 1.5rem 1rem;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    text-align: center;
+}
+
+.pwd{
+    border: 1px solid #ddd;
+    color: #333;
+    text-align: center;
+    padding: 5px 0;
+}
+
+.btn-pay{
+    display: inline-block;
+    padding: 5px 1rem;
+    background: #da753f;
+    color: #fff;
+    margin-top: 1rem;
+    font-size: 14px;
+}
+.btn-close{
+    width: 1rem;
+    height: 1rem;
+    position: absolute;
+    top: 10px;
+    right:10px;
+}
+
+.money{
+     border: 1px solid #ddd;
+    color: #da753f;
+    text-align: center;
+    padding: 5px 0;
+    line-height: 2;
+}
+
+checkbox,radio{
+    width: 25px;
+}

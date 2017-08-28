@@ -1,0 +1,15 @@
+<!--qrCode.wxml-->
+<view class="main">
+    <view class="user-info">
+        <image class="user-photo" src="/images/logo.jpg"></image>
+        <view class="user-detail">
+            <view class="name">大白</view>
+            <view class="country">中国 上海</view>
+        </view>
+    </view>
+
+    <canvas canvas-id="qrcode" class="qrcode" />
+    <view class="xn-text-center tip">扫描上方二维码,识别身份</view>
+
+
+</view>

@@ -1,0 +1,40 @@
+<!--keepCard.wxml-->
+<view class="main">
+    <view class="box">
+        <view class="box-title">续卡</view>
+        <view class="card-name">{{cardName}}</view>
+        <view class="typeList">
+            <view class="type {{item.active?'active':''}}" wx:for="{{typeList}}" wx:key="*this">{{item.type}}</view>
+
+        </view>
+
+        <view class="row xn-between">
+            <label>券支付</label>
+            <navigator url="/pages/cardCoupon/cardCoupon" class="quan">{{coupon||'无可用优惠券'}}</navigator>
+        </view>
+         <view class="row xn-between">
+            <label>优惠金额</label>
+            <label>-￥{{discount}}</label>
+        </view>
+         <view class="row xn-between">
+            <label>订单合计：(原价￥{{originPrice}})</label>
+           <label>￥{{price}}</label>
+        </view>
+
+        <view class="row pay-types xn-between">
+            <label>支付方式</label>
+            <view class="">
+                 <radio-group bindchange="checkboxChange">
+                    <label class="radio" wx:key="*this" wx:for="{{payTypes}}">
+                         <radio value="{{item.name}}" color="#da753f" checked="{{item.checked}}"/>{{item.value}}
+                </label>
+                </radio-group>
+            </view>
+        </view>
+        
+    </view>
+
+    <view class="xn-text-center">
+        <view class="btn"> 确认支付</view>
+    </view>
+</view>
