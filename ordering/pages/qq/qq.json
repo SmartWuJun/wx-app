@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "绑定QQ",
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  }
+}

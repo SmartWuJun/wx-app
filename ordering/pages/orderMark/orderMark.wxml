@@ -1,0 +1,17 @@
+<!--pages/orderMark/orderMark.wxml-->
+<view class='container'>
+	<view class='marks'>
+		<view class='marks-title'>快速备注</view>
+		<view class='labels'>
+			<view class='label active'>多点醋</view>
+			<view class='label'>多点醋</view>
+			<view class='label active'>多点醋</view>
+			<view class='label'>多点醋</view>
+			<view class='label active'>多点醋</view>
+			<view class='label'>多点醋</view>
+		</view>		
+	</view>
+	<textarea  class='input-mark' auto-height placeholder='输入其他备注...'></textarea>
+
+	<view class='btn-sure'>确定</view>
+</view>

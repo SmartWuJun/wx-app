@@ -1,0 +1,11 @@
+<!--pages/mail/mail.wxml-->
+<view class='xn-main'> 
+  <view class='xn-row-layout mt-30'>
+    <view class='xn-row'>
+      <input class='xn-input' type='text' placeholder="请输入邮箱"></input>
+    </view>
+    <button class='xn-btn mt-60' bindtap="">保存</button>
+  </view>
+</view>
+
+

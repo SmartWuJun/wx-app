@@ -1,0 +1,10 @@
+<template name="tip">
+<view class="showModule" >
+ <!-- 这部分内容可以灵活修改，例如改成一个模态框 -->
+ <view class="img-view">
+  <image class="img" src="/images/bad.png"></image>  
+  <view class="text ">{{title}}</view>
+ </view>
+
+</view>
+</template> 

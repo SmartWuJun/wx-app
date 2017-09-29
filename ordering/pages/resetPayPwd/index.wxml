@@ -1,0 +1,30 @@
+<!--pages/resetPayPwd/index.wxml-->
+
+<view class='container'>
+    <view class='block'>
+        <text class='tip'>{{isConfirmPwd?'再次输入':'输入6位支付密码'}}</text>
+        <view class='pwds' catchtap='set_Focus'>
+            <view class='pwd-dot'>
+                <i wx-if="{{password.length>0}}" class="dot"></i>
+            </view>
+            <view class='pwd-dot'>
+                <i wx-if="{{password.length>1}}" class="dot"></i>
+            </view>
+            <view class='pwd-dot'>
+                <i wx-if="{{password.length>2}}" class="dot"></i>
+            </view>
+            <view class='pwd-dot'>
+                <i wx-if="{{password.length>3}}" class="dot"></i>
+            </view>
+            <view class='pwd-dot'>
+                <i wx-if="{{password.length>4}}" class="dot"></i>
+            </view>
+            <view class='pwd-dot'>
+                <i wx-if="{{password.length>5}}" class="dot"></i>
+            </view>
+
+        </view>
+		<view wx:if="{{isConfirmPwd}}" class='btn-sure'>确定</view>
+    </view>
+    <input type='password' value='{{password}}' class='hiddenInput' password bindinput='pwdChange' maxlength='6' focus="{{isFocus}}"></input>
+</view>

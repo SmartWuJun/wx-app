@@ -1,0 +1,67 @@
+/* pages/details.wxss */
+.xn-main{
+  height: 100%;
+  width: 750rpx;
+  display: flex;
+  flex-direction:column;
+  flex: 1;
+}
+.detail{
+   flex: 1;
+}
+.flash{
+  position: relative;
+height: 630rpx;
+}
+.flash-img{
+ height: 630rpx;
+  width: 750rpx;
+}
+.info{
+  padding:35rpx 20rpx  40rpx 40rpx;
+  background: #fff;
+  border-bottom:1rpx solid #ddd; 
+}
+.info-title{
+    width: 100%;
+  display: inline-block;
+  line-height: 50rpx;
+  font-size: 36rpx;
+  color:#000;
+  margin-bottom: 32rpx;
+}
+.info-operating{
+  width: 100%;
+  display: inline-block;
+}
+
+.info-price{
+  display: inline-block;
+  line-height: 50rpx;
+  font-size: 36rpx;
+  color:#ff620e;
+  overflow: hidden
+}
+.info-add{
+  float: right;
+  width: 50rpx;
+  height: 50rpx;
+  border-radius: 50%;
+  background: orange
+}
+.detail-body{
+  margin-top: 40rpx;
+  background: #fff;
+  border-top:1rpx solid #ddd; 
+
+}
+
+.detail-title{
+  line-height: 50rpx;
+  font-size: 36rpx;
+  padding: 24rpx 47rpx;
+}
+.detail-content{
+  width: 750rpx;
+  height: 400rpx;
+}

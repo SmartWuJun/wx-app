@@ -1,0 +1,142 @@
+{
+	"description": "项目配置文件。",
+	"setting": {
+		"urlCheck": false,
+		"es6": true,
+		"postcss": true,
+		"minified": true
+	},
+	"compileType": "weapp",
+	"libVersion": "1.5.3",
+	"appid": "wxc50f9b13445a389a",
+	"projectname": "dev%E5%BE%AE%E4%BF%A1%E7%82%B9%E5%8D%95",
+	"condition": {
+		"weapp": {
+			"current": 18,
+			"list": [
+				{
+					"id": -1,
+					"name": "手机",
+					"pathName": "pages/phone/phone",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "邮箱",
+					"pathName": "pages/mail/mail",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "邮箱",
+					"pathName": "pages/forgetpwd/forgetpwd",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "微信号",
+					"pathName": "pages/wx/wx",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "QQ",
+					"pathName": "pages/qq/qq",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "支付密码",
+					"pathName": "pages/paypwd/paypwd",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "账户金额信息",
+					"pathName": "pages/amount/amount",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "地址",
+					"pathName": "pages/address/address",
+					"query": ""
+				},
+				{
+					"id": 8,
+					"name": "个人中心",
+					"pathName": "pages/my/my",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "修改密码",
+					"pathName": "pages/changepwd/changepwd",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "找回密码",
+					"pathName": "pages/forgetpwd/forgetpwd",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "添加地址",
+					"pathName": "pages/addresscreate/addresscreate",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "编辑地址",
+					"pathName": "pages/addresscedit/addressedit",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "个人中心",
+					"pathName": "pages/my/my",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "积分",
+					"pathName": "pages/integral/integral",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "登录",
+					"pathName": "pages/login/login",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "注册",
+					"pathName": "pages/register/register",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "商品列表",
+					"pathName": "pages/list/list",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "店铺",
+					"pathName": "pages/shops/shops",
+					"query": ""
+				}
+			]
+		},
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		}
+	}
+}

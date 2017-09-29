@@ -1,0 +1,110 @@
+/* pages/integral/integral.wxss */
+
+.xn-main{
+  height: 100%;
+  width: 750rpx;
+  display: flex;
+  flex-direction:column;
+  flex: 1;
+  background: #efeff4;
+  overflow: hidden;
+}
+
+.integral-layout{
+  margin-top: 30rpx;
+  background: #fff;
+}
+
+.xn-integral{
+  background: #fff;
+  flex: 1;
+  height: 100%;
+  overflow: hidden;
+}
+.integral-list{
+   height: 100%;
+  width: 750rpx;
+}
+
+.total{
+  text-align: left;
+  font-size:24rpx;
+  color:#333333;
+  line-height: 33rpx;
+}
+.total-number{
+  text-align: left;
+  font-size:48rpx;
+  color:#ff5c05;
+ line-height: 70rpx;
+
+}
+.integral-list .xn-row1:last-child{
+  border-bottom: 1rpx solid #ddd;
+}
+
+.shop-name{
+  text-align: left;
+  font-size:28rpx;
+  color:#000000;
+  line-height: 40rpx;
+}
+.shop-integral{
+   text-align: left;
+  font-size:24rpx;
+  color:#333;
+  line-height: 33rpx;
+}
+.date{
+  
+  color: #999;
+  font-size:24rpx;
+  line-height: 33rpx;
+}
+.integral{
+  display: block;
+  margin: 10rpx 0 0 10rpx;
+  float: right;
+  width: 30rpx;
+  height: 30rpx;
+}
+.value{
+  line-height: 45rpx;
+  font-size:32rpx;
+  color: #000;
+}
+.add{
+  color: #52c26e;
+}
+
+
+.xn-row1 .flex1{
+  flex: 1
+}
+.xn-row1 .flex2{
+  flex: 2
+}
+.xn-row1 .flex3{
+  flex: 3
+}
+
+.no-integral{
+  display: flex;
+  flex: 1;
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
+}
+.no-integral-icon{
+  width: 105rpx;
+  height:105rpx;
+  margin:10rpx auto;
+}
+.no-integral-text{
+  text-align: center;
+  height:105rpx;
+  margin:10rpx auto;
+  font-size:28rpx;
+  color:#bdbdbd;
+  margin-bottom:180rpx;
+}

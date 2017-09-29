@@ -1,0 +1,35 @@
+<!--pages/addresscedit/addressedit.wxml-->
+<view class='xn-main'>
+  <view class='xn-account'>
+    <view class='account-layout'>
+      <view class='xn-row1'>
+        <view class='row-lable'>用户姓名</view>
+        <view class='row-content'><input class='xn-input' type='text' placeholder="您的姓名"></input></view>
+         <view class='row-link'></view>
+      </view>
+      <view class='xn-row1'>
+        <view class='row-lable'>手机号码</view>
+         <view class='row-content'><input class='xn-input' type='text' placeholder="您的号码"></input></view>
+        <view class='row-link'></view>
+      </view>
+      <view class='xn-row1'>
+        <view class='row-lable'>所在地区</view>
+        <view class='row-content'>请选择</view>
+         <view class='row-link'><image class='link-img' src='/images/link.png' mode="aspectFit"></image></view>
+      </view>
+      <view class='xn-row1'>
+        <view class='row-lable'>邮编</view>
+        <view class='row-content'><input class='xn-input' type='text' placeholder="您的号码"></input></view>
+        <view class='row-link'></view>
+      </view>
+      <view class='xn-row1'>
+        <view class='row-content'>
+          <textarea class='xn-textarea' placeholder="请填写详细地址，不少于5个字"></textarea>
+        </view>
+        <view class='row-link'></view>
+      </view>
+    </view>
+  </view>
+   <button class='xn-btn mt-60' bindtap="">保存</button>
+</view>
+

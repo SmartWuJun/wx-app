@@ -1,0 +1,176 @@
+<!--pages/confirmOrder/confirmOrder.wxml-->
+
+<!--pages/orderDetail/orderDetail.wxml-->
+<view class='container'>
+
+    <scroll-view class='scroll' scroll-y>
+        <view class='zhanwei'></view>
+        <view class='order-detail'>
+            <view class='bags'>
+                <view class='bag'>
+                    <view class='bag-name'>口袋1</view>
+                    <view class='bag-goods'>
+                        <view class='row '>
+                            <view class='good-name'>牛油果沙拉</view>
+                            <view class='good-count'>
+                                <label>X</label>
+                                <text>1</text>
+                            </view>
+                            <view class='good-price'>
+                                <label>￥</label>
+                                <text>100</text>
+                            </view>
+                        </view>
+                        <view class='row '>
+                            <view class='good-name'>牛油果沙拉</view>
+                            <view class='good-count'>
+                                <label>X</label>
+                                <text>1</text>
+                            </view>
+                            <view class='good-price'>
+                                <label>￥</label>
+                                <text>100</text>
+                            </view>
+                        </view>
+                    </view>
+                </view>
+                <view class='bag'>
+                    <view class='bag-name'>口袋1</view>
+                    <view class='bag-goods'>
+                        <view class='row '>
+                            <view class='good-name'>牛油果沙拉牛油果沙拉牛油果沙拉牛油果沙拉牛油果沙拉</view>
+                            <view class='good-count'>
+                                <label>X</label>
+                                <text>1</text>
+                            </view>
+                            <view class='good-price'>
+                                <label>￥</label>
+                                <text>100</text>
+                            </view>
+                        </view>
+                        <view class='row '>
+                            <view class='good-name'>牛油果沙拉</view>
+                            <view class='good-count'>
+                                <label>X</label>
+                                <text>1</text>
+                            </view>
+                            <view class='good-price'>
+                                <label>￥</label>
+                                <text>100</text>
+                            </view>
+                        </view>
+                    </view>
+                </view>
+            </view>
+
+        </view>
+        <view class='order-info'>
+            <view class='row1'>
+                <view class='label'>服务类型</view>
+                <picker bindchange="changeServiceType" value="{{index}}" range="{{array}}">
+                    <view class="picker">
+                        <text> {{array[index]}}</text>
+                        <image class='icon-arrow' src='/images/link.png' mode="aspectFit"></image>
+                    </view>
+                </picker>
+            </view>
+            <view class='row1'>
+                <view class='label'>支付方式</view>
+                <picker bindchange="changeServiceType" value="{{index}}" range="{{payTypes}}" range-key="name">
+                    <view class="picker">
+                        <text> {{payTypes[index].name}}</text>
+                        <image class='icon-arrow' src='/images/link.png' mode="aspectFit"></image>
+                    </view>
+                </picker>
+            </view>
+            <view class='row1'>
+                <view class='label'>使用积分</view>
+                <input class='invoice' placeholder='可用积分0'></input>
+            </view>
+            <view class='row1'>
+                <view class='label'>使用优惠券</view>
+                <picker bindchange="changeCoupon" value="{{index}}" range="{{couponList}}">
+                    <view class="picker">
+                        <text wx:if="{{!couponList[couponIndex]}}"> 可用0张</text>
+                        <text wx:else> {{couponList[couponIndex]}}</text>
+                        <image class='icon-arrow' src='/images/link.png' mode="aspectFit"></image>
+                    </view>
+                </picker>
+            </view>
+            <view class='row1'>
+                <view class='label'>发票抬头</view>
+                <input class='invoice' placeholder='请输入发票抬头'></input>
+            </view>
+            <navigator class='row1' hover-class='none' url='/pages/orderMark/orderMark'>
+                <view class='label'>订单备注</view>
+                <view class='picker'>
+                    <text class='mark'> 口味偏好等口味偏好等口味偏好等口味偏好等口味偏好等口味偏好等口味偏好等口味偏好等口味偏好等</text>
+                    <image class='icon-arrow' src='/images/link.png' mode="aspectFit"></image>
+                </view>
+            </navigator>
+            <view class='row'>
+                <view class='label'>金额合计</view>
+                <view class='total'>￥100.00</view>
+            </view>
+            <view class='row'>
+                <view class='label'>优惠券折扣</view>
+                <view class='gray'>-100.00</view>
+            </view>
+            <view class='row'>
+                <view class='label'>积分折扣</view>
+                <view class='gray'>-100.00</view>
+            </view>
+            <view class='row'>
+                <view class='label'>优惠券</view>
+                <view class='gray'>-100.00</view>
+            </view>
+        </view>
+    </scroll-view>
+    <view class='footer'>
+        <view class='footer-left'>
+
+            <view class='total-price'>
+                <text>待支付：</text>
+                <label>￥</label>
+                <text>100.00</text>
+            </view>
+        </view>
+        <view class='btn-settle' catchtap='goPay'>付款</view>
+    </view>
+</view>
+
+<view class='mask' wx:if="{{isShow}}">
+    <view class='mask-block'>
+        <view class='block-header'>
+            <text>输入支付密码</text>
+			<image class='icon-close' catchtap='closePayPanel' src="/images/close.png"></image>
+        </view>
+        <view class='block-body'>
+            <text>300.00</text>
+        </view>
+        <view class='block-footer'>
+            <view class='pwds' catchtap='set_Focus'>
+                <view class='pwd-dot'>
+                    <i wx-if="{{password.length>0}}" class="dot"></i>
+                </view>
+                <view class='pwd-dot'>
+                    <i wx-if="{{password.length>1}}" class="dot"></i>
+                </view>
+                <view class='pwd-dot'>
+                    <i wx-if="{{password.length>2}}" class="dot"></i>
+                </view>
+                <view class='pwd-dot'>
+                    <i wx-if="{{password.length>3}}" class="dot"></i>
+                </view>
+                <view class='pwd-dot'>
+                    <i wx-if="{{password.length>4}}" class="dot"></i>
+                </view>
+                <view class='pwd-dot'>
+                    <i wx-if="{{password.length>5}}" class="dot"></i>
+                </view>
+
+            </view>
+			 <input type='password' value='{{password}}'  class='hiddenInput' password bindinput='pwdChange' maxlength='6' focus="{{isFocus}}"></input>
+        </view>
+    </view>
+</view>

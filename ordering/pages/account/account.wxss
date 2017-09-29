@@ -1,0 +1,31 @@
+/* pages/account/Account.wxss */
+
+.xn-main{
+  height: 100%;
+  width: 750rpx;
+  display: flex;
+  flex-direction:column;
+  flex: 1;
+  background: #efeff4;
+}
+.xn-account{
+  flex: 1;
+}
+.account-layout{
+  margin-top: 30rpx;
+  background: #fff;
+}
+.xn-logout{
+  margin-top: 30rpx;
+  padding: 33rpx;
+  text-align: center;
+  font-size:28rpx;
+  color:#ee5e53;
+  line-height: 40rpx;
+  background: #fff;
+}
+.avatar{
+  float: right;
+  width: 100rpx;
+  height: 100rpx;
+}

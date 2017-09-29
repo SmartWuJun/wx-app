@@ -1,0 +1,8 @@
+<template name="noTip">
+ <view class='no-tip-layout'>
+    <image class='no-tip-img' src='/images/noLogin.png' mode="aspectFit"></image>
+    <view class='no-text'>您还没有登录，请登录后查看个人信息</view>
+    <view class='no-btn' catchtap="doLogin">登录</view>
+    <view class='no-box'></view>
+ </view> 
+</template>

@@ -1,0 +1,17 @@
+/* login.wxss */
+.xn-main{
+  height: 100%;
+  width: 750rpx;
+  display: flex;
+  flex-direction:column;
+  flex: 1;
+  background: #fff;
+}
+.link{
+  float: right;
+  margin-right:45rpx;
+  height: 40rpx;
+  line-height: 40rpx;
+  font-size:28rpx;
+  color:#666666;
+}

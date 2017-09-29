@@ -1,0 +1,15 @@
+<!--pages/paypwd/paypwd.wxml-->
+<view class='xn-main'> 
+  <view class='xn-row-layout mt-30'>
+    <view class='xn-row'>
+      <input class='xn-input' type='text' placeholder="手机号"></input>
+    </view>
+    <view class='xn-row'>
+      <input class='xn-input' type='password' placeholder="验证码"></input>
+       <view class='set-btn'>发送验证吗</view>
+    </view>
+    <button class='xn-btn mt-60' bindtap="">下一步</button>
+  </view>
+</view>
+
+

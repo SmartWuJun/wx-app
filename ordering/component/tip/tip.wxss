@@ -1,0 +1,41 @@
+.showModule {
+ /* 用样式控制隐藏 visibility: hidden;*//* flex 布局 */
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ /* 生成绝对定位的元素，相对于浏览器窗口进行定位 */
+ position: fixed;
+ /* 如果 height,width 不变的情况下，left,top 不用修改 */
+ left: 35%;
+ top: 22%;
+ min-height: 7rem;
+ width: 6.3rem;
+ /* 不透明 */
+ opacity: 0.85;
+ background-color: #5b5b5b;
+ /* 圆角 */
+ border-radius: 10rpx;
+ text-align: center;
+}
+
+.showModule .img-view {
+  display: block;
+  height: 5rem;
+  width: 6rem;
+  text-align: center;
+}
+.showModule .img{
+  display: block;
+  height: 3rem;
+  width: 3rem;
+  margin-left: 1.575rem;
+}
+
+.showModule .text {
+ /* flex 布局 */
+ display: block;
+ color: white;
+ font-family: "微软雅黑";
+ width: 6rem;
+ margin-top: 0.2rem;
+}

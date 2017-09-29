@@ -1,0 +1,334 @@
+<!--pages/list/list.wxml-->
+<view class='container'>
+    <view class='header' style='background:url(/images/shopsFlash.png) center no-repeat;background-size: contain;'>
+        <view class='row-center'>
+            <image class='icon-shop' src='/images/shop.png'></image>
+            <view class='searchbox'>
+                <image class="icon-search" src='/images/search.png'></image>
+                <input class='input-search' placeholder='搜索商品名称...'></input>
+            </view>
+            <view class='btn-search'>搜索</view>
+        </view>
+        <swiper class='swiper' autoplay vertical>
+            <swiper-item>
+                <text>轮播公告</text>
+            </swiper-item>
+			 <swiper-item>
+                <text>轮播公告CCC</text>
+            </swiper-item>
+			 <swiper-item>
+                <text>轮播公告DDD</text>
+            </swiper-item>
+
+        </swiper>
+    </view>
+    <view class='list'>
+        <scroll-view class='type-list' scroll-y bindscroll="scrollType" scroll-into-view="{{toView}}" scroll-with-animation>
+
+            <view wx:for="{{typeList}}" wx:key="*this" id="intoView_{{index}}" data-index="{{index}}" catchtap='tabType' class='type {{item.active?"active":""}}'>{{item.name}}</view>
+
+        </scroll-view>
+        <scroll-view class='all-goods' scroll-y bindscroll="scrollGoods" scroll-into-view="{{toGoodView}}" scroll-with-animation bindscrolltolower="stopProgration">
+            <view class='good-type' wx:for="{{typeList}}" wx:key="*this" wx:for-item="type">
+                <view class='type-name' id="intoGoodView_{{index}}">{{item.name}}</view>
+                <view class='goods' wx:for="{{type.goods}}" wx:key="*this">
+                    <view class='good row'>
+                        <image class='good-photo' src="{{item.pic?item.pic:'/images/good.png'}}"></image>
+                        <view class='good-info'>
+                            <text class='good-name'>{{item.name}}</text>
+                            <view class='between'>
+                                <view class='price'>
+                                    <label>￥</label>
+                                    <text>{{item.price}}</text>
+                                </view>
+                                <view wx:if="{{!item.showSpec}}" class='operation'>
+                                    <image class='icon-btn' src="/images/less.png"></image>
+                                    <text>1</text>
+                                    <image class='icon-btn' src='/images/add.png'></image>
+                                </view>
+                                <view wx:else class='btn-selectFormat' data-goodId="{{item.id}}" data-name="{{item.name}}" data-price="{{item.price}}" data-typeId="{{type.id}}" catchtap='selectFormat'>选规格</view>
+                            </view>
+                        </view>
+                    </view>
+                </view>
+            </view>
+            <!-- <view class="good-type">
+				<view class='type-name'>常温沙拉</view>
+				<view class='goods'>
+					<view class='good row'>
+						<image class='good-photo' src="/images/good.png"></image>
+						<view class='good-info'>
+							<text class='good-name'>招牌奶茶</text>
+							<view class='between'>
+								<view class='price'>
+									<label>￥</label>
+									<text>95.20</text>
+								</view>
+								<view class='operation'>
+									<image class='icon-btn' src="/images/less.png"></image>
+									<text>1</text>
+									<image class='icon-btn' src='/images/add.png' ></image>
+								</view>
+							</view>
+						</view>
+					</view>
+					<view class='good row'>
+						<image class='good-photo' src="/images/good.png"></image>
+						<view class='good-info'>
+							<text class='good-name'>招牌奶茶</text>
+							<view class='between'>
+								<view class='price'>
+									<label>￥</label>
+									<text>95.20</text>
+								</view>
+								<view class='operation'>
+									<image class='icon-btn' src="/images/less.png"></image>
+									<text>1</text>
+									<image class='icon-btn' src='/images/add.png' ></image>
+								</view>
+							</view>
+						</view>
+					</view>
+					<view class='good row'>
+						<image class='good-photo' src="/images/good.png"></image>
+						<view class='good-info'>
+							<text class='good-name'>招牌奶茶</text>
+							<view class='between'>
+								<view class='price'>
+									<label>￥</label>
+									<text>95.20</text>
+								</view>
+								<view class='operation'>
+									<image class='icon-btn' src="/images/less.png"></image>
+									<text>1</text>
+									<image class='icon-btn' src='/images/add.png' ></image>
+								</view>
+							</view>
+						</view>
+					</view>
+					<view class='good row'>
+						<image class='good-photo' src="/images/good.png"></image>
+						<view class='good-info'>
+							<text class='good-name'>招牌奶茶</text>
+							<view class='between'>
+								<view class='price'>
+									<label>￥</label>
+									<text>95.20</text>
+								</view>
+								<view class='operation'>
+									<image class='icon-btn' src="/images/less.png"></image>
+									<text>1</text>
+									<image class='icon-btn' src='/images/add.png' ></image>
+								</view>
+							</view>
+						</view>
+					</view>
+					<view class='good row'>
+						<image class='good-photo' src="/images/good.png"></image>
+						<view class='good-info'>
+							<text class='good-name'>招牌奶茶</text>
+							<view class='between'>
+								<view class='price'>
+									<label>￥</label>
+									<text>95.20</text>
+								</view>
+								<view class='operation'>
+									<image class='icon-btn' src="/images/less.png"></image>
+									<text>1</text>
+									<image class='icon-btn' src='/images/add.png' ></image>
+								</view>
+							</view>
+						</view>
+					</view>
+					<view class='good row'>
+						<image class='good-photo' src="/images/good.png"></image>
+						<view class='good-info'>
+							<text class='good-name'>招牌奶茶</text>
+							<view class='between'>
+								<view class='price'>
+									<label>￥</label>
+									<text>95.20</text>
+								</view>
+								<view class='operation'>
+									<image class='icon-btn' src="/images/less.png"></image>
+									<text>1</text>
+									<image class='icon-btn' src='/images/add.png' ></image>
+								</view>
+							</view>
+						</view>
+					</view>
+				</view> -->
+            <!-- </view> -->
+			<view class='no-data' wx:if="{{isNoData}}" >
+				<image class='icon-no-data' src='/images/no-data.png'></image>
+				<view class='text'>没有找到您搜索的商品</view>
+				<view class='text'>“培根沙拉”</view>
+			</view>
+        </scroll-view>
+
+    </view>
+    <view class='footer'>
+        <view class='footer-left'>
+            <view class='shop-cart' catchtap='showCart'>
+                <view class='cart'>
+                    <!-- <image class="icon-cart" src="/images/cart.png"></image> -->
+                </view>
+                <view class="number">5</view>
+            </view>
+            <view class='total-price'>
+                <label>￥</label>
+                <text>100.00</text>
+            </view>
+        </view>
+        <view class='btn-settle'>去结算</view>
+    </view>
+</view>
+
+<view class='mask' wx:if="{{showMask}}" catchtap='closeMask'>
+    <view class='mask-content'>
+        <view class='shop-cart'>
+            <view class='cart'>
+                <!-- <image class="icon-cart" src="/images/cart.png"></image> -->
+            </view>
+            <view class="number">5</view>
+        </view>
+        <scroll-view class='bags' scroll-y="{{scrollY}}"  catchtap='stopPropagation' >
+            <view class='bag' wx:for="{{shopCart}}" wx:key="*this">
+                <view class='bag-header'>
+                    <text>{{index+1}}号口袋</text>
+                    <image wx:if="{{index==0}}" class='btn-delete' src='/images/delete.png'></image>
+                </view>
+                <view class="bag-goods">
+                    <view class='bag-good' wx:for="{{item.goods}}" wx:key="{{index}}" data-id="{{item.id}}" catchlongpress='longTap' bindtouchstart="moveStart" bindtouchmove="move" catchtouchend="moveEnd">
+                        <view class='cart-good-left'>
+                            <view class='good-name'>{{item.name}}</view>
+                            <view class='guige'>规格:{{item.format}}</view>
+                        </view>
+                        <view class='price'>
+                            <label>￥</label>
+                            <text>{{item.price}}</text>
+                        </view>
+                        <view class='operation'>
+                            <image class='icon-btn' src="/images/less.png"></image>
+                            <text>{{item.count}}</text>
+                            <image class='icon-btn' src='/images/add.png'></image>
+                        </view>
+                    </view>
+
+                </view>
+            </view>
+            <!-- <view class='bag'>
+                <view class='bag-header'>
+					<text>1号口袋</text>
+					<image class='btn-delete' src='/images/delete.png'></image>
+				 </view>
+                <view class="bag-goods">
+                    <view class='bag-good'>
+                        <view class='cart-good-left'>
+                            <view class='good-name'>香芋</view>
+                            <view class='guige'>规格:大杯</view>
+                        </view>
+                        <view class='price'>
+                            <label>￥</label>
+                            <text>100.00</text>
+                        </view>
+                        <view class='operation'>
+                            <image class='icon-btn' src="/images/less.png"></image>
+                            <text>1</text>
+                            <image class='icon-btn' src='/images/add.png'></image>
+                        </view>
+                    </view>
+					<view class='bag-good'>
+                        <view class='cart-good-left'>
+                            <view class='good-name'>香芋</view>
+                            <view class='guige'>规格:大杯</view>
+                        </view>
+                        <view class='price'>
+                            <label>￥</label>
+                            <text>100.00</text>
+                        </view>
+                        <view class='operation'>
+                            <image class='icon-btn' src="/images/less.png"></image>
+                            <text>1</text>
+                            <image class='icon-btn' src='/images/add.png'></image>
+                        </view>
+                    </view>
+					<view class='bag-good'>
+                        <view class='cart-good-left'>
+                            <view class='good-name'>香芋</view>
+                            <view class='guige'>规格:大杯</view>
+                        </view>
+                        <view class='price'>
+                            <label>￥</label>
+                            <text>100.00</text>
+                        </view>
+                        <view class='operation'>
+                            <image class='icon-btn' src="/images/less.png"></image>
+                            <text>1</text>
+                            <image class='icon-btn' src='/images/add.png'></image>
+                        </view>
+                    </view>
+                </view>
+            </view> -->
+            <view class='bag-good moving '  wx:key="moving" style='left:{{start.x}}px; top:{{start.y}}px;transform:translate({{start.tx}}px,{{start.ty}}px)'>
+                <view class='cart-good-left'>
+                    <view class='good-name'>香芋</view>
+                    <view class='guige'>规格:大杯</view>
+                </view>
+                <view class='price'>
+                    <label>￥</label>
+                    <text>100.00</text>
+                </view>
+                <view class='operation'>
+                    <image class='icon-btn' src="/images/less.png"></image>
+                    <text>1</text>
+                    <image class='icon-btn' src='/images/add.png'></image>
+                </view>
+            </view>
+        </scroll-view>
+        <view class='footer'>
+            <view class='footer-left'>
+
+                <view class='total-price'>
+                    <label>￥</label>
+                    <text>100.00</text>
+                </view>
+            </view>
+            <view class='btn-settle'>去结算</view>
+        </view>
+    </view>
+</view>
+
+<view class='mask' wx:if="{{showFormat}}" catchtap='closeMask'>
+    <view class='format-panel'>
+        <view class='panel-header'>
+            <view class='panel-title'>{{specInfo.name}}</view>
+            <image class='icon-close' src='/images/close.png' catchtap='closeMask'></image>
+        </view>
+        <view class='panel-body'>
+            <view class='option' wx:for="{{specInfo.list}}" wx:key="*this">
+                <view class='option-name'>{{item.name}}:</view>
+                <view class='labels' >
+                    <view class='label' wx:for="{{item.labels}}" wx:key="*this">{{item.text}}</view>
+                </view>
+            </view>
+            <!-- <view class='option'>
+                <view class='option-name'>其他:</view>
+                <view class='labels'>
+                    <view class='label active'>多糖</view>
+                    <view class='label'>多糖</view>
+                    <view class='label'>多糖</view>
+                    <view class='label'>多糖</view>
+                    <view class='label'>多糖</view>
+                </view>
+            </view> -->
+        </view>
+        <view class='panel-footer'>
+            <view class='panel-footer-price'>
+                <label>￥</label>
+                <text>{{specInfo.price}}</text>
+            </view>
+            <view class='panel-footer-btn'>选好了</view>
+        </view>
+    </view>
+</view>

@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "设置支付密码",
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  }
+}

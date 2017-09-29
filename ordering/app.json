@@ -1,0 +1,62 @@
+{
+	"pages": [
+		"pages/login/login",
+		"pages/account/account",
+		"pages/my/my",
+		"pages/register/register",
+		"pages/details/details",
+		"pages/shops/shops",
+		"pages/forgetpwd/forgetpwd",
+		"pages/list/list",
+		"pages/demo/demo",
+		"pages/demo/moveable",
+		"pages/orderDetail/orderDetail",
+		"pages/confirmOrder/confirmOrder",
+		"pages/orderMark/orderMark",
+		"pages/phone/phone",
+		"pages/mail/mail",
+		"pages/wx/wx",
+		"pages/qq/qq",
+		"pages/amount/amount",
+		"pages/address/address",
+		"pages/addresscreate/addresscreate",
+		"pages/addresscedit/addressedit",
+		"pages/changepwd/changepwd",
+		"pages/integral/integral",
+		"pages/paypwd/paypwd",
+		"pages/resetPayPwd/index",
+		"pages/paySuccess/index",
+		"pages/demo/animation"
+	],
+	"window": {
+		"backgroundTextStyle": "light",
+		"navigationBarBackgroundColor": "#000",
+		"navigationBarTitleText": "微信小程序",
+		"navigationBarTextStyle": "#fff"
+	},
+	"tabBar": {
+		"color": "#696969",
+		"selectedColor": "#ff9267",
+		"backgroundColor": "#fff",
+		"list": [
+			{
+				"pagePath": "pages/shops/shops",
+				"iconPath": "/images/index.png",
+				"selectedIconPath": "/images/index-active.png",
+				"text": "首页"
+			},
+			{
+				"pagePath": "pages/order/order",
+				"iconPath": "/images/order.png",
+				"selectedIconPath": "/images/order-active.png",
+				"text": "订单"
+			},
+			{
+				"pagePath": "pages/my/my",
+				"iconPath": "/images/my.png",
+				"selectedIconPath": "/images/my-active.png",
+				"text": "我的"
+			}
+		]
+	}
+}

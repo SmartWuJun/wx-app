@@ -1,0 +1,66 @@
+  <!--pages/account/Account.wxml-->
+<view class='xn-main'>
+  <view class='xn-account'>
+    <view class='account-layout'>
+      <view class='xn-row1'>
+        <view class='row-lable'>头像</view>
+         <view class='xn-picker'> 
+          <view class='row-picker' bindtap='selectAvatar'>
+            <view class='row-content'>
+            <image class='avatar' src='/images/avatar-gray.png' mode='aspectFit'></image>
+            </view>
+            <view class='row-link'><image class='link-img' src='/images/link.png' mode="aspectFit"></image></view>
+          </view>   
+        </view>
+       
+      </view>     
+    </view>
+    <view class='account-layout'>
+      <view class='xn-row1'>
+        <view class='row-lable'>用户姓名</view>
+        <view class='row-content'>丹</view>
+        <view class='row-link'></view>
+      </view>
+      <view class='xn-row1'>
+        <view class='row-lable'>会员级别</view>
+        <view class='row-content'>金牌会员</view>
+        <view class='row-link'></view>
+      </view>
+      <view class='xn-row1'>
+        <view class='row-lable'>卡号</view>
+        <view class='row-content'>丹7354738264865</view>
+        <view class='row-link'><image class='link-img' src='/images/link.png' mode="aspectFit"></image></view>
+      </view>
+      <view class='xn-row1'>
+        <view class='row-lable'>手机号</view>
+        <view class='row-content'>18776457890</view>
+        <view class='row-link'><image class='link-img' src='/images/link.png' mode="aspectFit"></image></view>
+      </view>
+      <view class='xn-row1'>
+        <view class='row-lable'>邮箱</view>
+        <view class='row-content'>shiswangdao@163.com</view>
+        <view class='row-link'><image class='link-img' src='/images/link.png' mode="aspectFit"></image></view>
+      </view>
+      <navigator  class='xn-row1' hover-class='none'>
+        <view class='row-lable'>修改登陆密码</view>
+        <view class='row-content'></view>
+        <view class='row-link'><image class='link-img' src='/images/link.png' mode="aspectFit"></image></view>
+      </navigator>
+    </view>
+    <view class='account-layout'>
+      <view class='xn-row1'>
+        <view class='row-lable'>绑定微信</view>
+        <view class='row-content'></view>
+        <view class='row-link'><image class='link-img' src='/images/link.png' mode="aspectFit"></image></view>
+      </view>
+      <view class='xn-row1'>
+        <view class='row-lable'>绑定QQ</view>
+        <view class='row-content'></view>
+        <view class='row-link'><image class='link-img' src='/images/link.png' mode="aspectFit"></image></view>
+      </view>
+    </view>
+   
+  </view>
+  <view class='xn-logout'>解绑并退出</view>
+</view>
+

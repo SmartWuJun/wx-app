@@ -1,0 +1,23 @@
+<!--modal.wxml-->
+<template name="modal">
+    <view class="modal-mask"    hidden="{{isHide}}">
+        <view class="modal-tip" >
+            <view class="modal-tip-head">
+                <image class="modal-close" catchtap="__modal_close" src="/images/close.png"></image> 
+            </view>
+        
+            <view class="modal-tip-content" wx:if="{{type=='confirm'}}">
+                <view class="modal-tip-title">{{content}}</view>
+                <view class="modal-ok" wx:if="{{okText}}" catchtap="__modal_ok">{{okText}}</view>
+                <view class="modal-cancel" catchtap="__modal_cancel">{{cancelText}}</view>
+              
+            </view>
+            <view class="modal-tip-content" wx:else>
+                  <input class="modal-input" type="password" bindinput="__modal_inputChange" placeholder="{{placeholder}}" />
+                  
+                <view class="modal-ok" catchtap="__modal_ok">{{okText}}</view>
+            </view>
+        </view>
+    </view>
+
+</template>

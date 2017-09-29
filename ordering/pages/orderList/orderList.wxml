@@ -1,0 +1,93 @@
+<import src="/template/noTip.wxml"/>
+<import src="/template/selectLogin.wxml"/>
+
+<view class="container xn-main">
+  <template is="noTip"  wx:if="{{isShow==0}}" />
+  <template is="selectLogin" wx:elif="{{isShow==1}}"/>
+	<view wx:else class='order-list'>
+		<view class='order'>
+			<view class='order-header'>
+				<view class='order-no'>订单编号:000001</view>
+				<view class='order-status'>已完成</view>
+			</view>
+			<view class='order-content'>
+				<view class='order-rows'>
+					<view class='order-row'>
+						<view class='item-name'>
+							薯片牛油果沙拉
+						</view>
+						<view class='item-count'>
+							x1
+						</view>
+						<view class='item-price'>￥100.0</view>
+					</view>
+					<view class='order-row'>
+						<view class='item-name'>
+							薯片牛油果沙拉
+						</view>
+						<view class='item-count'>
+							x1
+						</view>
+						<view class='item-price'>￥100.0</view>
+					</view>
+					<view class='order-row'>
+						<view class='item-name'>
+							薯片牛油果沙拉薯片牛油果沙拉薯片牛油果沙拉薯片牛油果沙拉薯片牛油果沙拉
+						</view>
+						<view class='item-count'>
+							x1
+						</view>
+						<view class='item-price'>￥100.0</view>
+					</view>
+				</view>
+				<view class='total-price bt'>
+					实付 ￥60.00
+				</view>
+			</view>
+			<view wx:if="{{status=='s'}}" class='order-footer'></view>
+		</view>
+			<view class='order'>
+			<view class='order-header'>
+				<view class='order-no'>订单编号:000001</view>
+				<view class='order-status wait-pay'>待支付</view>
+			</view>
+			<view class='order-content'>
+				<view class='order-rows'>
+					<view class='order-row'>
+						<view class='item-name'>
+							薯片牛油果沙拉
+						</view>
+						<view class='item-count'>
+							x1
+						</view>
+						<view class='item-price'>￥100.0</view>
+					</view>
+					<view class='order-row'>
+						<view class='item-name'>
+							薯片牛油果沙拉
+						</view>
+						<view class='item-count'>
+							x1
+						</view>
+						<view class='item-price'>￥100.0</view>
+					</view>
+					<view class='order-row'>
+						<view class='item-name'>
+							薯片牛油果沙拉薯片牛油果沙拉薯片牛油果沙拉薯片牛油果沙拉薯片牛油果沙拉
+						</view>
+						<view class='item-count'>
+							x1
+						</view>
+						<view class='item-price'>￥100.0</view>
+					</view>
+				</view>
+				<view class='total-price {{status=="WAIT"?"":"bt"}}'>
+					实付 ￥60.00
+				</view>
+			</view>
+			<view wx:if="{{status=='WAIT'}}" class='order-footer'>
+				<view class="btn-pay">去付款</view>
+			</view>
+		</view>
+	</view>
+</view>

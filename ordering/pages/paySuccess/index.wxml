@@ -1,0 +1,12 @@
+<!--pages/paySuccess/index.wxml-->
+<view class='container'>
+	<image class='icon-success' src="/images/paysuccess.png"></image>
+	<view class='text'>支付成功0.01元</view>
+	<view class='mark'>含支付抵扣</view>
+	<view class='meal-info'>
+		您的取餐号:<text>E001</text>
+	</view>
+	<view class='mark'>您也可以在订单详情处查看取餐号哦~</view>
+	<navigator class='link' hover-class='none' url='/pages/orderDetail/orderDetail'>查看订单详情</navigator>
+	<view class='btn-sure'>确定</view>
+</view>

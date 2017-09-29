@@ -1,0 +1,4 @@
+/* pages/demo/animation.wxss */
+page{
+	position: relative;
+}

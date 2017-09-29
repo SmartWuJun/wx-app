@@ -1,0 +1,4 @@
+<!--pages/demo/animation.wxml-->
+<view animation="{{animationData}}" style="position:absolute;background:red;height:100rpx;width:100rpx;border-radius:50%;left:{{start.x}}px; top:{{start.y}}px"></view>
+
+<button catchtap='doAnimation'>动画</button>

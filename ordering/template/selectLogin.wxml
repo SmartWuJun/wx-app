@@ -1,0 +1,15 @@
+<template name="selectLogin">
+ <view class='select-login'>
+    <view class='pop-layout'>
+    <view class='pop-close'>
+       <image class='pop-close-img' src='/images/close.png' mode="aspectFit"></image>
+    </view>
+    <view class='pop-title'>选择登录方式</view>
+    <view class='pop-body'>
+     <navigator class='pop-row' url='/pages/login/login' hover-class="none">绑定会员账号</navigator>
+     <navigator class='pop-row' url='/pages/register/register' hover-class="none">注册新会员</navigator>
+     <navigator class='pop-row' url='/pages/login/login' hover-class="none">散客</navigator>
+    </view>
+    </view>
+ </view> 
+</template>

@@ -1,0 +1,15 @@
+/* pages/qq/qq.wxss */
+.xn-main{
+  height: 100%;
+  width: 750rpx;
+  display: flex;
+  flex-direction:column;
+  flex: 1;
+
+}
+.bg{
+  background: #fff;
+}
+.bg .xn-row{
+  border-bottom: transparent;
+}

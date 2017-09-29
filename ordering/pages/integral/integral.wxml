@@ -1,0 +1,206 @@
+<!--pages/integral/integral.wxml-->
+<view class='xn-main'>
+  <view class='integral-layout'>
+    <view class='xn-row1'>
+      <view class='row-content '>
+        <view class='total'>累计积分</view>
+        <view class='total-number'>200</view>
+      </view>
+      <view class='row-content' >{{month}}
+                 
+      </view>
+      <picker class='row-link' mode ="date" bindchange="bindTimeChange" value="{{month}}"  fields="month" >
+      <image class='link-select' src='/images/select.png' mode="aspectFit"></image>
+      </picker>
+    </view>     
+  </view>
+
+ 
+
+  <view class='xn-integral mt-30'>
+    <view class='no-integral'>
+      <image  class='no-integral-icon' src='/images/nointegral.png'></image>
+      <text class='no-integral-text'>暂无积分明细</text>
+    </view>    
+    <scroll-view wx:if="{{false}}" scroll-y class='integral-list' bindscrolltoupper="upper" 
+      bindscrolltolower="lower" bindscroll="scroll" scroll-into-view="{{toView}}" scroll-top="{{scrollTop}}">
+      <view class='xn-row1'>
+        <view class='row-content flex2'>
+          <view class='shop-name'>全家竹园路门店消费</view> 
+          <view class='shop-integral'>余积分：40</view> 
+        </view>
+        <view class='row-content'>
+          <view class='date'>2017-09-09</view> 
+          <view class='value add'>+1 <image class='integral' src='/images/integral.png' ></image></view> 
+        </view>
+        <view class='row-link'></view>
+      </view>
+      <view class='xn-row1'>
+        <view class='row-content flex2'>
+          <view class='shop-name'>全家竹园路门店消费</view> 
+          <view class='shop-integral'>余积分：40</view> 
+        </view>
+        <view class='row-content'>
+          <view class='date'>2017-09-09</view> 
+          <view class='value'>-1 <image class='integral' src='/images/integral.png' ></image></view> 
+        </view>
+        <view class='row-link'></view>
+      </view>
+      <view class='xn-row1'>
+        <view class='row-content flex2'>
+          <view class='shop-name'>全家竹园路门店消费</view> 
+          <view class='shop-integral'>余积分：40</view> 
+        </view>
+        <view class='row-content'>
+          <view class='date'>2017-09-09</view> 
+          <view class='value'>-1 <image class='integral' src='/images/integral.png' ></image></view> 
+        </view>
+        <view class='row-link'></view>
+      </view>
+      <view class='xn-row1'>
+        <view class='row-content flex2'>
+          <view class='shop-name'>全家竹园路门店消费</view> 
+          <view class='shop-integral'>余积分：40</view> 
+        </view>
+        <view class='row-content'>
+          <view class='date'>2017-09-09</view> 
+          <view class='value'>-1 <image class='integral' src='/images/integral.png' ></image></view> 
+        </view>
+        <view class='row-link'></view>
+      </view>
+      <view class='xn-row1'>
+        <view class='row-content flex2'>
+          <view class='shop-name'>全家竹园路门店消费</view> 
+          <view class='shop-integral'>余积分：40</view> 
+        </view>
+        <view class='row-content'>
+          <view class='date'>2017-09-09</view> 
+          <view class='value'>-1 <image class='integral' src='/images/integral.png' ></image></view> 
+        </view>
+        <view class='row-link'></view>
+      </view>
+      <view class='xn-row1'>
+        <view class='row-content flex2'>
+          <view class='shop-name'>全家竹园路门店消费</view> 
+          <view class='shop-integral'>余积分：40</view> 
+        </view>
+        <view class='row-content'>
+          <view class='date'>2017-09-09</view> 
+          <view class='value'>-1 <image class='integral' src='/images/integral.png' ></image></view> 
+        </view>
+        <view class='row-link'></view>
+      </view>
+      <view class='xn-row1'>
+        <view class='row-content flex2'>
+          <view class='shop-name'>全家竹园路门店消费</view> 
+          <view class='shop-integral'>余积分：40</view> 
+        </view>
+        <view class='row-content'>
+          <view class='date'>2017-09-09</view> 
+          <view class='value'>-1 <image class='integral' src='/images/integral.png' ></image></view> 
+        </view>
+        <view class='row-link'></view>
+      </view>
+      <view class='xn-row1'>
+        <view class='row-content flex2'>
+          <view class='shop-name'>全家竹园路门店消费</view> 
+          <view class='shop-integral'>余积分：40</view> 
+        </view>
+        <view class='row-content'>
+          <view class='date'>2017-09-09</view> 
+          <view class='value'>-1 <image class='integral' src='/images/integral.png' ></image></view> 
+        </view>
+        <view class='row-link'></view>
+      </view>
+      <view class='xn-row1'>
+        <view class='row-content flex2'>
+          <view class='shop-name'>全家竹园路门店消费</view> 
+          <view class='shop-integral'>余积分：40</view> 
+        </view>
+        <view class='row-content'>
+          <view class='date'>2017-09-09</view> 
+          <view class='value'>-1 <image class='integral' src='/images/integral.png' ></image></view> 
+        </view>
+        <view class='row-link'></view>
+      </view>
+      <view class='xn-row1'>
+        <view class='row-content flex2'>
+          <view class='shop-name'>全家竹园路门店消费</view> 
+          <view class='shop-integral'>余积分：40</view> 
+        </view>
+        <view class='row-content'>
+          <view class='date'>2017-09-09</view> 
+          <view class='value'>-1 <image class='integral' src='/images/integral.png' ></image></view> 
+        </view>
+        <view class='row-link'></view>
+      </view>
+      <view class='xn-row1'>
+        <view class='row-content flex2'>
+          <view class='shop-name'>全家竹园路门店消费</view> 
+          <view class='shop-integral'>余积分：40</view> 
+        </view>
+        <view class='row-content'>
+          <view class='date'>2017-09-09</view> 
+          <view class='value'>-1 <image class='integral' src='/images/integral.png' ></image></view> 
+        </view>
+        <view class='row-link'></view>
+      </view>
+      <view class='xn-row1'>
+        <view class='row-content flex2'>
+          <view class='shop-name'>全家竹园路门店消费</view> 
+          <view class='shop-integral'>余积分：40</view> 
+        </view>
+        <view class='row-content'>
+          <view class='date'>2017-09-09</view> 
+          <view class='value'>-1 <image class='integral' src='/images/integral.png' ></image></view> 
+        </view>
+        <view class='row-link'></view>
+      </view>
+      <view class='xn-row1'>
+        <view class='row-content flex2'>
+          <view class='shop-name'>全家竹园路门店消费</view> 
+          <view class='shop-integral'>余积分：40</view> 
+        </view>
+        <view class='row-content'>
+          <view class='date'>2017-09-09</view> 
+          <view class='value'>-1 <image class='integral' src='/images/integral.png' ></image></view> 
+        </view>
+        <view class='row-link'></view>
+      </view>
+      <view class='xn-row1'>
+        <view class='row-content flex2'>
+          <view class='shop-name'>全家竹园路门店消费</view> 
+          <view class='shop-integral'>余积分：40</view> 
+        </view>
+        <view class='row-content'>
+          <view class='date'>2017-09-09</view> 
+          <view class='value'>-1 <image class='integral' src='/images/integral.png' ></image></view> 
+        </view>
+        <view class='row-link'></view>
+      </view>
+      <view class='xn-row1'>
+        <view class='row-content flex2'>
+          <view class='shop-name'>全家竹园路门店消费</view> 
+          <view class='shop-integral'>余积分：40</view> 
+        </view>
+        <view class='row-content'>
+          <view class='date'>2017-09-09</view> 
+          <view class='value'>-1 <image class='integral' src='/images/integral.png' ></image></view> 
+        </view>
+        <view class='row-link'></view>
+      </view>
+      <view class='xn-row1'>
+        <view class='row-content flex2'>
+          <view class='shop-name'>全家竹园路门店消费</view> 
+          <view class='shop-integral'>余积分：40</view> 
+        </view>
+        <view class='row-content'>
+          <view class='date'>2017-09-09</view> 
+          <view class='value'>-1 <image class='integral' src='/images/integral.png' ></image></view> 
+        </view>
+        <view class='row-link'></view>
+      </view>
+    </scroll-view>
+  </view>
+
+</view>

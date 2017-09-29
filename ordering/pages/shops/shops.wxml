@@ -1,0 +1,31 @@
+<!--pages/shops/shops.wxml-->
+<view class='xn-main'>
+  <view class='flash'>
+   <image class='flash-img' src='/images/shopsFlash.png' mode="aspectFit" ></image>
+   <view class='bulletin'>
+    <text class='bulletin-text'>轮播公告：点单后半小时取点单小</text>
+   </view>
+  </view>
+  <view class='scroll'>
+   <scroll-view scroll-y class='shops' bindscrolltoupper="upper" bindscrolltolower="getMore"  >
+   
+    <navigator class='item' hover-class='' url="/pages/list/list?id={{item.id}}&unitId={{item.operatingUnitId}}" wx:for="{{shopList}}" wx:key="*this">
+      <view class='item-img-box'>
+        <image class='item-img' src='/images/shop-img.png' mode='aspectFit'></image>
+      </view>
+      <view class='item-content'>
+        <text class='item-title'>{{item.location.address}}</text>
+        <text class='item-distance'>{{item.distance?('距离 '+item.distance):'无法获得距离'}}</text>
+        <view class='item-location'><image class='location-icon' src='/images/location.png' mode='aspectFit'></image>
+        <text class='item-location-text'>{{item.location.countryName}}{{item.location.provinceName}}{{item.location.cityName}}{{item.location.districtName}}</text>
+        </view>
+      </view>
+    </navigator>
+
+   
+
+  </scroll-view>
+  </view>
+
+
+</view>

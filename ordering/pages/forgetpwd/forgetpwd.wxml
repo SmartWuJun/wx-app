@@ -1,0 +1,25 @@
+<!--pages/forgetpwd/forgetpwd.wxml-->
+<view class='xn-main'>
+  <view class='xn-logo-layout'><image class='xn-logo-img' src='/images/logo.png' mode="aspectFit" ></image></view>
+  <view class='.xn-row-layout'>
+   <view class='xn-row'>
+      <input class='xn-input' type='text' placeholder="手机号"></input>
+    </view>
+    <view class='xn-row'>
+      <input class='xn-input' type='text' placeholder="验证码"></input>
+      <view class='set-btn'>发送验证吗</view>
+    </view>
+    <view class='xn-row'>
+      <input class='xn-input' type='password' placeholder="登录账号"></input>
+    </view>
+    <view class='xn-row'>
+      <input class='xn-input' type='password' placeholder="密码"></input>
+    </view>
+    <view class='xn-row'>
+      <input class='xn-input' type='password' placeholder="确认密码"></input>
+    </view>
+    <button class='xn-btn mt-60' bindtap="">重置</button>
+  </view>
+</view>
+
+

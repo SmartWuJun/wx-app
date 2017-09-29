@@ -1,0 +1,190 @@
+/* pages/my/my.wxss */
+.xn-main{
+  height: 100%;
+  width: 750rpx;
+  display: flex;
+  flex-direction:column;
+  flex: 1;
+  background: #fff;
+}
+.no-tip-layout{
+   width: 750rpx;
+   flex: 1;
+   display: flex;
+   flex-direction:column;
+   justify-content: center;
+   align-items:center;
+   align-content: center;
+   height: 100%;
+   text-align: center;
+}
+.no-tip-layout .no-tip-img{
+  width: 120rpx;
+  height: 130rpx;
+  margin:0 auto 64rpx;
+}
+.no-tip-layout .no-text{
+   text-align: center;
+   font-size:32rpx;
+   color:#333333;
+   height: 45rpx;
+   line-height: 45rpx;
+   margin-bottom: 30rpx;
+}
+.no-tip-layout .no-btn{
+   display: block;
+   font-size:32rpx;
+   color:#fff;
+   height: 60rpx;
+   line-height: 60rpx;
+   background:#ff9267;
+   border-radius:2px;
+   padding: 0 28rpx;   
+}
+.no-tip-layout .no-box{
+   width: 250rpx;
+   height: 250rpx;
+}
+
+.select-login{
+  position: fixed;
+  top:0;
+  left:0;
+  right: 0;
+  bottom: 0; 
+  background: rgba(0,0,0,.6);
+  width: 750rpx;
+  display: flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items:center;
+  align-content: center;
+  height: 100%;
+  text-align: center;
+  z-index: 99
+}
+.select-login .pop-layout{
+  background: #fff;
+  width: 600rpx;
+  padding: 40rpx 50rpx;
+  position: relative;
+}
+.select-login .pop-layout .pop-close{
+  float: right;
+  position: absolute;
+  right: 30rpx;
+  top:30rpx;
+  width: 25rpx;
+  height: 25rpx;
+  z-index: 99;
+}
+
+.select-login .pop-layout .pop-close .pop-close-img{
+  width: 25rpx;
+  height: 25rpx;
+}
+.select-login .pop-layout .pop-title{
+  color:#999999;
+  font-size:28rpx;
+  height: 40rpx;
+  line-height: 40rpx;
+}
+.select-login .pop-layout .pop-body{
+  margin: 50rpx 0 0; 
+}
+.select-login .pop-layout .pop-body .pop-row{
+  border-bottom: 1rpx solid #ddd;
+  height: 100rpx;
+  line-height: 100rpx;
+}
+.select-login .pop-layout .pop-body .pop-row:last-child{
+  border-bottom: 1rpx solid transparent;
+}
+.my-layout{
+  flex: 1;
+}
+.my-layout .my-top{
+  width: 630rpx;
+  height: 270rpx;
+  margin:40rpx auto 0;
+  position: relative;
+  overflow: hidden;
+}
+.my-layout .my-top .my-top-bj{
+  width: 630rpx;
+  height: 270rpx;
+  border-radius:20rpx;
+}
+.my-layout .my-top .my-top-layout{
+  position: absolute;
+  left: 0;
+  right: 0;
+  top:0;
+  bottom: 0;
+  width: 630rpx;
+  height: 270rpx;
+  overflow: hidden;
+  padding: 38rpx 35rpx;
+}
+.my-layout .my-top .my-top-layout .grade-avatar{
+  width: 80rpx;
+  height: 80rpx;
+  float: left;
+  margin-right:30rpx; 
+}
+.my-layout .my-top .my-top-layout .my-avatar{
+  width: 80rpx;
+  height: 80rpx;
+  float: left;
+}
+.my-layout .my-top .my-top-layout .info{
+  overflow: hidden;
+  color: #fff;
+}
+.my-layout .my-top .my-top-layout .info .name{
+  display: block;
+  height: 40rpx;
+  line-height: 40rpx;
+  font-size: 32rpx;
+}
+.my-layout .my-top .my-top-layout .info .grade{
+  display: block;
+  height: 40rpx;
+  line-height: 40rpx;
+  font-size: 28rpx;
+}
+
+.upgrade{
+  margin:55rpx auto;
+  width: 250rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  text-align: center;
+  font-size:28rpx;
+  color:#333333;
+  border: 1rpx solid #ddd;
+
+}
+.application-list{
+  margin:55rpx 55rpx 0;
+}
+.application-list .application{
+  float: left;
+  margin: 55rpx 0;
+  width:33.33%;
+  height:120rpx;
+}
+.application-list .application .application-icon{
+  display: block;
+  width: 60rpx;
+  height: 60rpx;
+  margin:0 auto 20rpx;
+}
+.application-list .application .application-name{
+  display: block;
+  text-align: center;
+  height: 40rpx;
+  line-height: 40rpx;
+  font-size:28rpx;
+  color:#666666;
+}

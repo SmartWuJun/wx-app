@@ -1,0 +1,14 @@
+<!--login.wxml-->
+<view class='xn-main'>
+  <view class='xn-logo-layout'><image class='xn-logo-img' src='/images/logo.png' mode="aspectFit" ></image></view>
+  <view class='xn-row-layout'>
+    <view class='xn-row'>
+      <input class='xn-input' type='text' value='{{username}}' placeholder="账号" bindinput="bindInputAccount"></input>
+    </view>
+    <view class='xn-row'>
+      <input class='xn-input' type='password' value='{{password}}' placeholder="密码"  bindinput="bindInputPassword"></input>
+    </view>
+    <button class='xn-btn mt-60' bindtap="login">登录</button>
+  </view>
+  <view class='mt-30 clearfix '><navigator class='link' url='/pages/forgetpwd/forgetpwd'>忘记密码</navigator></view>
+</view>

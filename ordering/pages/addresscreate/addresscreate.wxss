@@ -1,0 +1,26 @@
+/* pages/addresscreate/addresscreate.wxss */
+/* pages/address/address.wxss */
+
+
+.xn-main{
+  height: 100%;
+  width: 750rpx;
+  display: flex;
+  flex-direction:column;
+  flex: 1;
+  background: #efeff4;
+}
+
+.account-layout{
+  background: #fff;
+}
+.account-layout .row-lable{
+  color: #333;
+}
+.account-layout .row-content{
+  color: #999;
+}
+.account-layout .xn-input{
+  padding-top: 0;
+  padding-bottom: 0;
+}

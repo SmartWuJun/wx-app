@@ -1,0 +1,44 @@
+<!--pages/address/address.wxml-->
+
+<view class='xn-main'>
+  <view class='address-layout'>
+    <scroll-view scroll-y class='address-list' bindscrolltoupper="upper" 
+      bindscrolltolower="lower" bindscroll="scroll" scroll-into-view="{{toView}}" scroll-top="{{scrollTop}}">
+      <view class='xn-row-list'>
+        <navigator  class='xn-row1' hover-class='none'>
+          <view class='row-content'>
+          <view class='row-info'><text class='name'>杨丹</text><text class='phone'>18765432345</text></view>
+          <view class='address'>江苏苏州新区竹园路209号苏州创业园2号楼财富广场2105苏州犀牛网络</view>
+          </view>
+          <view class='row-link'><image class='link-edit' src='/images/edit.png' mode="aspectFit"></image></view>
+        </navigator>  
+        <navigator  class='xn-row1' hover-class='none'>
+          <view class='row-content'>
+          <view class='row-info'><text class='name'>杨丹</text><text class='phone'>18765432345</text></view>
+          <view class='address'>江苏苏州新区竹园路209号苏州创业园2号楼财富广场2105苏州犀牛网络</view>
+          </view>
+          <view class='row-link'><image class='link-edit' src='/images/edit.png' mode="aspectFit"></image></view>
+        </navigator>  
+         <navigator  class='xn-row1' hover-class='none'>
+          <view class='row-content'>
+          <view class='row-info'><text class='name'>杨丹</text><text class='phone'>18765432345</text></view>
+          <view class='address'>江苏苏州新区竹园路209号苏州创业园2号楼财富广场2105苏州犀牛网络</view>
+          </view>
+          <view class='row-link'><image class='link-edit' src='/images/edit.png' mode="aspectFit"></image></view>
+        </navigator>  <navigator  class='xn-row1' hover-class='none'>
+          <view class='row-content'>
+          <view class='row-info'><text class='name'>杨丹</text><text class='phone'>18765432345</text></view>
+          <view class='address'>江苏苏州新区竹园路209号苏州创业园2号楼财富广场2105苏州犀牛网络</view>
+          </view>
+          <view class='row-link'><image class='link-edit' src='/images/edit.png' mode="aspectFit"></image></view>
+        </navigator>
+      </view>
+    </scroll-view>
+  </view>
+  <navigator class='xn-add' url='/pages/addresscreate/addresscreate'>
+  <image class='add-icon' src='/images/addicon.png' mode='aspectFit'></image>新增地址
+  </navigator>
+  
+</view>                   
+
+

@@ -1,0 +1,48 @@
+<!--pages/my/my.wxml-->
+<import src="/template/noTip.wxml"/>
+<import src="/template/selectLogin.wxml"/>
+
+<view class='xn-main'>
+  <template is="noTip"  wx:if="{{isShow==0}}" />
+  <template is="selectLogin" wx:if="{{isShow==1}}"/>
+  <view wx:if="{{isShow==2}}" class='my-layout'>
+    <view class='my-top'>
+     <image class='my-top-bj' src='/images/myBg.png'></image>
+     <view class='my-top-layout'>
+       <view class='grade-avatar'><image class='my-avatar' src='/images/avatar.png'></image></view>
+       <view class='info'>
+        <text class='name'>杨丹</text>
+        <text class='grade'>普通会员</text>
+       </view>
+     </view>
+    </view>
+    <view class='upgrade'>升级为正式会员</view>
+    <view class='application-list clearfix'>
+      <navigator class='application' hover-class="none" url='/pages/amount/amount' >
+        <image class='application-icon' src='/images/application-1.png'></image>
+        <text class='application-name'>账户信息</text>
+      </navigator>
+      <navigator class='application' hover-class="none" url='/pages/address/address'>
+        <image class='application-icon' src='/images/application-2.png'></image>
+        <text class='application-name'>我的地址</text>
+      </navigator>
+      <navigator class='application' hover-class="none" url='/pages/integral/integral'>
+        <image class='application-icon' src='/images/application-3.png'></image>
+        <text class='application-name'>会员等级</text>
+      </navigator>
+      <navigator class='application' hover-class="none" url='/pages/account/account'>
+        <image class='application-icon' src='/images/application-4.png'></image>
+        <text class='application-name'>基础信息</text>
+      </navigator>
+      <navigator class='application' hover-class="none" url='/pages/integral/integral'>
+        <image class='application-icon' src='/images/application-5.png'></image>
+        <text class='application-name'>我的积分</text>
+      </navigator>
+      <navigator class='application' hover-class="none" url='/pages/paypwd/paypwd'>
+        <image class='application-icon' src='/images/application-6.png'></image>
+        <text class='application-name'>支付密码</text>
+      </navigator>
+    </view>
+  
+  </view>
+</view>

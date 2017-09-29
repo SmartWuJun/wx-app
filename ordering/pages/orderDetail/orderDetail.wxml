@@ -1,0 +1,115 @@
+<!--pages/orderDetail/orderDetail.wxml-->
+<view class='container'>
+    <view class='order-header'>
+        <image class='icon' src='/images/wait-pay.png'></image>
+        <image class='icon' src='/images/finished.png'></image>
+        <text>待付款</text>
+    </view>
+    <scroll-view class='scroll' scroll-y>
+		<view class='zhanwei'></view>
+        <view class='order-detail'>
+            <view class='bags'>
+                <view class='bag'>
+                    <view class='bag-name'>口袋1</view>
+                    <view class='bag-goods'>
+                        <view class='row '>
+                            <view class='good-name'>牛油果沙拉</view>
+                            <view class='good-count'>
+                                <label>X</label>
+                                <text>1</text>
+                            </view>
+                            <view class='good-price'>
+                                <label>￥</label>
+                                <text>100</text>
+                            </view>
+                        </view>
+                        <view class='row '>
+                            <view class='good-name'>牛油果沙拉</view>
+                            <view class='good-count'>
+                                <label>X</label>
+                                <text>1</text>
+                            </view>
+                            <view class='good-price'>
+                                <label>￥</label>
+                                <text>100</text>
+                            </view>
+                        </view>
+                    </view>
+                </view>
+                <view class='bag'>
+                    <view class='bag-name'>口袋1</view>
+                    <view class='bag-goods'>
+                        <view class='row '>
+                            <view class='good-name'>牛油果沙拉牛油果沙拉牛油果沙拉牛油果沙拉牛油果沙拉</view>
+                            <view class='good-count'>
+                                <label>X</label>
+                                <text>1</text>
+                            </view>
+                            <view class='good-price'>
+                                <label>￥</label>
+                                <text>100</text>
+                            </view>
+                        </view>
+                        <view class='row '>
+                            <view class='good-name'>牛油果沙拉</view>
+                            <view class='good-count'>
+                                <label>X</label>
+                                <text>1</text>
+                            </view>
+                            <view class='good-price'>
+                                <label>￥</label>
+                                <text>100</text>
+                            </view>
+                        </view>
+                    </view>
+                </view>
+            </view>
+            <view class='cal-price'>
+                <view class='row'>
+                    <view class='label'>金额合计</view>
+                    <view class='total'>￥100.00</view>
+                </view>
+                <view class='row'>
+                    <view class='label'>金额合计</view>
+                    <view class='gray'>-100.00</view>
+                </view>
+            </view>
+        </view>
+        <view class='order-info'>
+			<view class='row'>
+				<view class='label'>
+					备注:
+				</view>
+				<view class='text'>
+					XXX
+				</view>
+			</view>
+			<view class='row'>
+				<view class='label'>
+					订单号:
+				</view>
+				<view class='text'>
+					XXX
+				</view>
+			</view>
+			<view class='row'>
+				<view class='label'>
+					订单时间:
+				</view>
+				<view class='text'>
+					XXX
+				</view>
+			</view>
+        </view>
+    </scroll-view>
+    <view class='footer'>
+        <view class='footer-left'>
+
+            <view class='total-price'>
+                <label>￥</label>
+                <text>100.00</text>
+            </view>
+        </view>
+        <view class='btn-settle'>付款</view>
+    </view>
+</view>

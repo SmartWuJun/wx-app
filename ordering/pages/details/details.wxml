@@ -1,0 +1,24 @@
+<!--pages/details.wxml-->
+<view class='xn-main'>
+ <view  class='detail'>
+    <view class='flash'>
+      <image class='flash-img' src='/images/detail.png' mode="aspectFit" ></image>
+    </view>
+    <view class='info'>
+      <text class='info-title'>奶茶</text>
+      <view class='info-operating'>
+        <view class='info-add'></view>
+        <text class='info-price'>¥23.5</text>
+      </view>
+    </view>
+
+    <view class='detail-body'>
+     <view class='detail-title'>图文详情</view>
+      <view class='detail-content'>
+      </view>
+
+    
+    </view>
+  </view>
+
+</view>

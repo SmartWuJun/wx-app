@@ -1,0 +1,52 @@
+/* pages/orderMark/orderMark.wxss */
+.container{
+	background: #efeff4;
+	flex: 1;
+}
+
+.marks{
+	padding: 42rpx 33rpx;
+	background: #fff;
+}
+
+.marks-title{
+	color: #000;
+	font-size: 16px;
+}
+
+.labels{
+	margin-top: 27rpx;
+	padding:10rpx 0;
+}
+.label{
+	margin: 6rpx 15rpx;
+	padding: 8rpx 27rpx;
+	font-size: 16px;
+	color: #333;
+	border: 1rpx solid #999;
+	display: inline-block;
+}
+.label.active{
+	color: #fff;
+	background: #ff9267;
+	border-color:#fff ;
+}
+
+.input-mark{
+	margin-top: 20rpx;
+	background: #fff;
+	padding: 36rpx 35rpx;
+	width: 100%;
+	min-height: 180rpx;
+	font-size: 16px;
+	color: #999;
+}
+
+.btn-sure{
+	margin: 37rpx 35rpx;
+	background: #ff9267;
+	border-radius: 8rpx;
+	text-align: center;
+	padding: 18rpx;
+	color: #fff;
+}

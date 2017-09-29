@@ -1,0 +1,12 @@
+<!--pages/qq/qq.wxml-->
+<view class='xn-main'> 
+  <view class='xn-row-layout mt-30'>
+    <view class='bg'>
+      <view class='xn-row'>
+        <input class='xn-input' type='text' placeholder="输入QQ号" ></input>
+      </view>
+    </view>
+    <button class='xn-btn mt-60' bindtap="">绑定</button>
+  </view>
+</view>
+
